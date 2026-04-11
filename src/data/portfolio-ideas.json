@@ -209,6 +209,22 @@
         "date": "Feb 27, 2020",
         "content": "Peter Thiel argues that science was \"decentralized\" and \"healthy\" before the New Deal; then after the atomic bomb, it became too centralized and bureaucratized to innovate. Before, we had \"science as discovery,\" now we have \"science as governance.\"",
         "url": "https://x.com/bkavoussi/status/1232886329438015488"
+      },
+      {
+        "type": "tweet",
+        "source": "@benitoz",
+        "author": "Ben Pouladian",
+        "handle": "@benitoz",
+        "date": "Apr 11, 2026",
+        "content": "Today, SanDisk replaced Atlassian in the Nasdaq-100.\n\nA NAND manufacturer took the seat of a Jira vendor. That is the regime change in one headline. Read it twice.\n\nFor 15 years, the Nasdaq-100 was a monument to asset-light software. High gross margins, negative working capital, zero cleanroom capex, Rule of 40 as scripture. SanDisk is the anti-Atlassian. Fabs, fluorine chemistry, EUV-adjacent lithography, 232-layer stacks, wafer yields measured in basis points. Actual physics.\n\nAnd here is the part nobody on fintwit is pricing in.\n\nThe US graduated 24,547 electrical engineering bachelor's in 1986-87. In 2020-21, we graduated 16,914.\n\nFour decades later. Still below the Reagan-era peak. Not flat. Down.\n\nComputer science over the same window went from roughly 39k to 109k. Call it 2.8x. The two lines on the chart do not just diverge, they mock each other.\n\nI say this as an electrical engineer. UCSD, Fainman's ultrafast nanoscale optics lab, silicon photonics, micro-ring resonators. I know exactly what it takes to train someone who can actually move a process node, close timing on a mixed-signal die, or debug a yield problem at 3am. It is not a weekend cohort. It is a decade minimum, and most of that decade happens inside a fab or a tape-out cycle, not a classroom.\n\nAn entire generation of smart kids was correctly told to chase software. That is where the returns were. TAM expansion, zero marginal cost, stock comp that prints. Nobody was writing Substacks about NAND process engineers in 2015. Nobody was telling their kid to go learn III-V epitaxy instead of React.\n\nNow the regime has flipped and the pipeline is a ghost town.\n\nYou cannot bootcamp a device physicist. You cannot GPT your way into an analog layout. You cannot vibe-code a 232-layer charge trap stack. The training loop is a PhD plus a decade of tribal knowledge locked inside TSMC, Micron, Hynix, Samsung, Applied Materials, and maybe a dozen labs that actually still teach this stuff.\n\nWhen SanDisk wants to double enterprise SSD output, the binding constraint is not capital. The market will fund it at any multiple you can type into a DCF right now. The constraint is humans who know how to make the stack yield. And those humans are already employed, already vested, and already being counter-offered.\n\nThis is the Memory Wars thesis with a labor-market overlay. The software guys spent 15 years telling us hardware was a commodity. Now the commodity has pricing power and the \"real engineers\" are the ones walking into comp negotiations with leverage for the first time in a generation.\n\nPricing power accrues to whoever already has the talent locked up. That is the incumbents, and anyone with a serious university pipeline. Everyone else is about to learn that CHIPS Act money does not manufacture device physicists. It just bids up the ones who already exist.\n\nSanDisk entering the NDX is not the story.\n\nSanDisk entering the NDX while the US graduates fewer EEs than it did under Reagan, that is the story.\n\nSource: NCES Digest of Education Statistics, Tables 325.35 and 325.47. Bachelor's degrees only.",
+        "url": "https://x.com/benitoz/status/2042780730925945239",
+        "media": [
+          {
+            "kind": "image",
+            "src": "/images/tweets/benitoz-2042780730925945239.png",
+            "alt": "The Great Divergence: US bachelor's degrees in Computer Science vs. Electrical Engineering, 1985-2021. CS climbs from ~39k to 108,503 (2021-22). EE declines from a 1986 peak of 24,547 to 16,914 (2020-21)."
+          }
+        ]
       }
     ],
     "projects": []
