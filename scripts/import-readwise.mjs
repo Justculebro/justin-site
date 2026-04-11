@@ -314,7 +314,10 @@ function buildFrontmatter(meta) {
 }
 
 function renderHighlight(h) {
-  const out = [`- ${h.text} ^${h.rwid}`];
+  // The rwid is embedded as an HTML comment so the markdown renderer
+  // strips it entirely from the rendered page, but we can still find it
+  // on re-import for dedup.
+  const out = [`- ${h.text} <!--rwid:${h.rwid}-->`];
   for (const n of h.notes) out.push(`  - ${n}`);
   return out.join('\n');
 }
@@ -366,6 +369,9 @@ function extractExistingRwids(body) {
   const after = body.slice(idx);
   const nextH2 = after.slice(2).search(/^##\s+/m);
   const section = nextH2 === -1 ? after : after.slice(0, 2 + nextH2);
+  // Current format: <!--rwid:rwid-xxxxxx-->
+  for (const m of section.matchAll(/<!--rwid:(rwid-[\w-]+)-->/g)) set.add(m[1]);
+  // Legacy format: ^rwid-xxxxxx (block-ref) — supported for migration
   for (const m of section.matchAll(/\^(rwid-[\w-]+)/g)) set.add(m[1]);
   return set;
 }
