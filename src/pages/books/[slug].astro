@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import ideasData from '../../data/portfolio-ideas.json';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.map(book => ({
+    params: { slug: book.slug },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props;
+const { Content } = await book.render();
+const tags: string[] = book.data.tags || [];
+
+// Auto interconnections — essays that share at least one tag
+const allEssays = await getCollection('essays');
+const relatedEssays = allEssays
+  .filter((e: any) => (e.data.tags || []).some((t: string) => tags.includes(t)))
+  .map((e: any) => ({
+    slug: e.slug || (e.id || '').replace(/\.md$/, ''),
+    title: e.data.title,
+    date: e.data.date || '',
+    excerpt: e.data.excerpt || '',
+  }))
+  .sort((a, b) => {
+    if (!a.date && !b.date) return 0;
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  })
+  .slice(0, 6);
+
+// Auto interconnections — portfolio ideas whose id matches a book tag
+const relatedIdeas = (ideasData as any[])
+  .filter(i => tags.includes(i.id))
+  .map(i => ({ id: i.id, title: i.title, tagline: i.tagline }));
+
+const rating = book.data.rating || 0;
+---
+
+<BaseLayout
+  title={book.data.title}
+  currentPage="bookshelf"
+  description={`Highlights and notes from ${book.data.title} by ${book.data.author}.`}
+>
+  <a href="/bookshelf" class="back-link">← Bookshelf</a>
+
+  <div class="book-hero">
+    {book.data.cover ? (
+      <img class="book-hero-cover" src={book.data.cover} alt={book.data.title} />
+    ) : (
+      <div class="book-hero-cover-placeholder"></div>
+    )}
+    <div class="book-hero-info">
+      <h1 class="book-hero-title">{book.data.title}</h1>
+      <div class="book-hero-author">{book.data.author}</div>
+      <div class="book-hero-meta">
+        {rating > 0 && (
+          <div class="rating-dots">
+            {[1,2,3,4,5].map((star: number) => (
+              <div class={`rating-dot ${star <= rating ? 'filled' : ''}`}></div>
+            ))}
+          </div>
+        )}
+        {book.data.year_read && <span class="book-hero-year">Read {book.data.year_read}</span>}
+        {book.data.quake && <span class="quake-badge">◆ QUAKE</span>}
+      </div>
+      {tags.length > 0 && (
+        <div class="book-hero-tags">
+          {tags.map((tag: string) => (
+            <a href={`/portfolio/${tag}`} class="book-tag-pill">{tag}</a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  {(relatedEssays.length > 0 || relatedIdeas.length > 0) && (
+    <div class="auto-interconnections">
+      <div class="auto-interconnections-label">Related from this site</div>
+      {relatedIdeas.length > 0 && (
+        <div class="related-ideas">
+          {relatedIdeas.map(idea => (
+            <a href={`/portfolio/${idea.id}`} class="related-idea-pill">
+              <span class="related-idea-title">{idea.title}</span>
+              <span class="related-idea-tagline">{idea.tagline}</span>
+            </a>
+          ))}
+        </div>
+      )}
+      {relatedEssays.length > 0 && (
+        <div class="related-essays">
+          {relatedEssays.map(essay => (
+            <a href={`/essays/${essay.slug}`} class="idea-essay-card">
+              <div class="idea-essay-header">
+                <span class="idea-essay-title">{essay.title}</span>
+                {essay.date && (
+                  <span class="idea-essay-date">
+                    {new Date(essay.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+                  </span>
+                )}
+              </div>
+              {essay.excerpt && <div class="idea-essay-excerpt">{essay.excerpt.slice(0, 140)}...</div>}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  )}
+
+  <div class="prose book-prose">
+    <Content />
+  </div>
+</BaseLayout>
+
+<style>
+  .back-link {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+    transition: color 0.15s ease;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .book-hero { display: flex; gap: 24px; align-items: flex-start; }
+  .book-hero-cover {
+    width: 120px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    flex-shrink: 0;
+  }
+  .book-hero-cover-placeholder {
+    width: 120px;
+    height: 168px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, hsl(355, 55%, 38%) 0%, hsl(355, 45%, 25%) 100%);
+  }
+  .book-hero-info { flex: 1; min-width: 0; }
+  .book-hero-title {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .book-hero-author {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+  }
+  .book-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .rating-dots { display: flex; gap: 4px; }
+  .rating-dot { width: 8px; height: 8px; border-radius: 2px; background: var(--border); }
+  .rating-dot.filled { background: var(--accent); }
+  .book-hero-year {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+  }
+  .quake-badge {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .book-hero-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .book-tag-pill {
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .book-tag-pill:hover { color: var(--accent); border-color: var(--accent); }
+
+  .auto-interconnections {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 28px;
+  }
+  .auto-interconnections-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-tertiary);
+    margin-bottom: 12px;
+  }
+  .related-ideas { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .related-idea-pill {
+    display: flex;
+    flex-direction: column;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    max-width: 240px;
+  }
+  .related-idea-pill:hover { border-color: var(--accent); }
+  .related-idea-title { color: var(--accent); font-size: 13px; font-weight: 600; }
+  .related-idea-tagline {
+    color: var(--text-tertiary);
+    font-size: 11px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .related-essays { display: flex; flex-direction: column; gap: 8px; }
+  .idea-essay-card {
+    display: block;
+    text-decoration: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: border-color 0.15s ease;
+  }
+  .idea-essay-card:hover { border-color: var(--accent); }
+  .idea-essay-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .idea-essay-title { color: var(--text); font-size: 13px; font-weight: 500; }
+  .idea-essay-date { color: var(--text-tertiary); font-size: 11px; flex-shrink: 0; white-space: nowrap; }
+  .idea-essay-excerpt { color: var(--text-secondary); font-size: 12px; line-height: 1.5; margin-top: 6px; }
+
+  .book-prose :global(h2) {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 32px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .book-prose :global(h2:first-child) { margin-top: 0; }
+  .book-prose :global(ul) { padding-left: 20px; }
+  .book-prose :global(li) {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .book-prose :global(li li) {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .book-prose :global(em) { color: var(--text-tertiary); }
+
+  @media (max-width: 640px) {
+    .book-hero { flex-direction: column; }
+    .book-hero-cover, .book-hero-cover-placeholder { width: 96px; height: 134px; }
+    .book-hero-title { font-size: 22px; }
+  }
+</style>

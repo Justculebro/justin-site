@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+
+# Local dev tooling
+.claude/
+
+# Readwise raw exports — drop folder for the import script
+readwise-inbox/

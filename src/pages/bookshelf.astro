@@ -1,6 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import booksData from '../data/books.json';
+import { getCollection } from 'astro:content';
+import { bookSlug } from '../lib/bookSlug';
+
+const bookEntries = await getCollection('books');
+const bookSlugs = new Set(bookEntries.map((b: any) => b.slug));
+const hasPage = (title: string) => bookSlugs.has(bookSlug(title));
 
 const quakeBooks = booksData.quake_books;
 const library = booksData.library as Record<string, any[]>;
@@ -39,20 +45,29 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
       These are the books that fundamentally shifted my worldview — the ones I return to and reference constantly. Not the best books I've read, but the ones that left the deepest mark.
     </p>
     <div class="quake-list">
-      {quakeBooks.map((book: any, i: number) => (
-        <div class="quake-item">
-          {book.cover ? (
-            <img class="quake-cover" src={book.cover} alt={book.title} loading="lazy" />
-          ) : (
-            <div class="quake-cover-placeholder" style={`background: linear-gradient(135deg, hsl(${355 + i * 25}, 55%, 38%) 0%, hsl(${355 + i * 25}, 45%, 25%) 100%);`}></div>
-          )}
-          <div class="quake-info">
-            <div class="quake-title">{book.title}</div>
-            <div class="quake-author">{book.author}</div>
-          </div>
-          <div class="quake-diamond">◆</div>
-        </div>
-      ))}
+      {quakeBooks.map((book: any, i: number) => {
+        const slug = bookSlug(book.title);
+        const linkable = bookSlugs.has(slug);
+        const inner = (
+          <>
+            {book.cover ? (
+              <img class="quake-cover" src={book.cover} alt={book.title} loading="lazy" />
+            ) : (
+              <div class="quake-cover-placeholder" style={`background: linear-gradient(135deg, hsl(${355 + i * 25}, 55%, 38%) 0%, hsl(${355 + i * 25}, 45%, 25%) 100%);`}></div>
+            )}
+            <div class="quake-info">
+              <div class="quake-title">{book.title}</div>
+              <div class="quake-author">{book.author}</div>
+            </div>
+            <div class="quake-diamond">◆</div>
+          </>
+        );
+        return linkable ? (
+          <a href={`/books/${slug}`} class="quake-item quake-item-link">{inner}</a>
+        ) : (
+          <div class="quake-item">{inner}</div>
+        );
+      })}
     </div>
   </div>
 
@@ -99,27 +114,36 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
           )}
 
           <div class="library-list">
-            {books.map((book: any) => (
-              <div class="library-item" data-tags={JSON.stringify(book.tags || [])}>
-                <div class="rating-dots">
-                  {[1,2,3,4,5].map((star: number) => (
-                    <div class={`rating-dot ${star <= (book.rating || 0) ? 'filled' : ''}`}></div>
-                  ))}
-                </div>
-                <div class="library-info">
-                  <div class="library-title-row">
-                    <span class="library-title">{book.title}</span>
-                    {book.quake && <span class="quake-badge">◆ QUAKE</span>}
+            {books.map((book: any) => {
+              const slug = bookSlug(book.title);
+              const linkable = bookSlugs.has(slug);
+              const inner = (
+                <>
+                  <div class="rating-dots">
+                    {[1,2,3,4,5].map((star: number) => (
+                      <div class={`rating-dot ${star <= (book.rating || 0) ? 'filled' : ''}`}></div>
+                    ))}
                   </div>
-                  <div class="library-author">{book.author}</div>
-                </div>
-                <div class="library-tags">
-                  {(book.tags || []).slice(0, 2).map((tag: string) => (
-                    <span class="library-tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
+                  <div class="library-info">
+                    <div class="library-title-row">
+                      <span class="library-title">{book.title}</span>
+                      {book.quake && <span class="quake-badge">◆ QUAKE</span>}
+                    </div>
+                    <div class="library-author">{book.author}</div>
+                  </div>
+                  <div class="library-tags">
+                    {(book.tags || []).slice(0, 2).map((tag: string) => (
+                      <span class="library-tag">{tag}</span>
+                    ))}
+                  </div>
+                </>
+              );
+              return linkable ? (
+                <a href={`/books/${slug}`} class="library-item library-item-link" data-tags={JSON.stringify(book.tags || [])}>{inner}</a>
+              ) : (
+                <div class="library-item" data-tags={JSON.stringify(book.tags || [])}>{inner}</div>
+              );
+            })}
           </div>
         </div>
       );
@@ -139,12 +163,21 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
             <div class="topic-line"></div>
           </div>
           <div class="topic-books">
-            {books.map((book) => (
-              <div class="topic-book-chip">
-                <div class="topic-book-title">{book.title}</div>
-                <div class="topic-book-author">{book.author}</div>
-              </div>
-            ))}
+            {books.map((book) => {
+              const slug = bookSlug(book.title);
+              const linkable = bookSlugs.has(slug);
+              const inner = (
+                <>
+                  <div class="topic-book-title">{book.title}</div>
+                  <div class="topic-book-author">{book.author}</div>
+                </>
+              );
+              return linkable ? (
+                <a href={`/books/${slug}`} class="topic-book-chip topic-book-chip-link">{inner}</a>
+              ) : (
+                <div class="topic-book-chip">{inner}</div>
+              );
+            })}
           </div>
         </div>
       ))}
@@ -196,6 +229,7 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
   .quake-list { display: flex; flex-direction: column; gap: 10px; }
   .quake-item { display: flex; align-items: center; gap: 16px; padding: 14px 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; transition: border-color 0.15s ease; }
   .quake-item:hover { border-color: var(--accent); }
+  .quake-item-link { text-decoration: none; color: inherit; cursor: pointer; }
   .quake-cover { width: 48px; height: 64px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
   .quake-cover-placeholder { width: 48px; height: 64px; border-radius: 4px; flex-shrink: 0; }
   .quake-info { flex: 1; }
@@ -225,6 +259,8 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
   .library-list { display: flex; flex-direction: column; gap: 4px; }
   .library-item { display: flex; align-items: center; gap: 14px; padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.15s ease; }
   .library-item:hover { border-color: var(--text-tertiary); }
+  .library-item-link { text-decoration: none; color: inherit; cursor: pointer; }
+  .library-item-link:hover { border-color: var(--accent); }
   .rating-dots { display: flex; gap: 3px; flex-shrink: 0; width: 52px; }
   .rating-dot { width: 7px; height: 7px; border-radius: 2px; background: var(--border); }
   .rating-dot.filled { background: var(--accent); }
@@ -243,7 +279,9 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
   .topic-count { font-size: 11px; color: var(--text-tertiary); }
   .topic-line { flex: 1; height: 1px; background: var(--border); }
   .topic-books { display: flex; gap: 8px; flex-wrap: wrap; }
-  .topic-book-chip { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; max-width: 200px; }
+  .topic-book-chip { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; max-width: 200px; transition: border-color 0.15s ease; }
+  .topic-book-chip-link { text-decoration: none; color: inherit; cursor: pointer; display: block; }
+  .topic-book-chip-link:hover { border-color: var(--accent); }
   .topic-book-title { font-size: 12px; font-weight: 500; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .topic-book-author { font-size: 10px; color: var(--text-tertiary); margin-top: 2px; }
 
