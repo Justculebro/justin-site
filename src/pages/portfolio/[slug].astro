@@ -148,16 +148,18 @@ const ideaProjects = idea.projects || [];
       </div>
       {ideaFeed.length > 0 ? (
         ideaFeed.slice(0, 3).map((item: any) => (
-          <div class="idea-feed-item">
-            <span class="idea-feed-icon">{item.type === 'tweet' ? '𝕏' : item.type === 'article' ? '📰' : item.type === 'podcast' ? '🎧' : '📖'}</span>
-            <div class="idea-feed-body">
-              <div class="idea-feed-meta">
-                <span class="idea-feed-source">{item.source}</span>
-                <span class="idea-feed-date">{item.date}</span>
+          <a class="tweet-card" href={item.url} target="_blank" rel="noopener noreferrer">
+            <div class="tweet-header">
+              <div class="tweet-avatar">{(item.author || item.source || '?').replace('@','').charAt(0).toUpperCase()}</div>
+              <div class="tweet-user">
+                <span class="tweet-name">{item.author || item.source}</span>
+                <span class="tweet-handle">{item.handle || item.source}</span>
               </div>
-              <div class="idea-feed-content">{item.content}</div>
+              <svg class="tweet-x-logo" viewBox="0 0 24 24" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
             </div>
-          </div>
+            <p class="tweet-text">{item.content}</p>
+            <span class="tweet-date">{item.date}</span>
+          </a>
         ))
       ) : (
         <p class="idea-empty">Saved tweets, articles, podcasts, and notes will accumulate here over time.</p>
@@ -213,19 +215,18 @@ const ideaProjects = idea.projects || [];
     {ideaFeed.length > 0 ? (
       <div class="idea-feed-list">
         {ideaFeed.map((item: any) => (
-          <div class="idea-feed-item-full">
-            <div class="idea-feed-icon-box">
-              {item.type === 'tweet' ? '𝕏' : item.type === 'article' ? '📰' : item.type === 'podcast' ? '🎧' : '📖'}
-            </div>
-            <div class="idea-feed-body">
-              <div class="idea-feed-meta">
-                <span class="idea-feed-type">{item.type}</span>
-                <span class="idea-feed-source">{item.source}</span>
-                <span class="idea-feed-date">{item.date}</span>
+          <a class="tweet-card" href={item.url} target="_blank" rel="noopener noreferrer">
+            <div class="tweet-header">
+              <div class="tweet-avatar">{(item.author || item.source || '?').replace('@','').charAt(0).toUpperCase()}</div>
+              <div class="tweet-user">
+                <span class="tweet-name">{item.author || item.source}</span>
+                <span class="tweet-handle">{item.handle || item.source}</span>
               </div>
-              <div class="idea-feed-content">{item.content}</div>
+              <svg class="tweet-x-logo" viewBox="0 0 24 24" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
             </div>
-          </div>
+            <p class="tweet-text">{item.content}</p>
+            <span class="tweet-date">{item.date}</span>
+          </a>
         ))}
       </div>
     ) : (
@@ -390,27 +391,74 @@ const ideaProjects = idea.projects || [];
   .idea-book-author { font-size: 11px; color: var(--text-tertiary); display: block; margin-top: 1px; }
   .idea-book-year { font-size: 11px; color: var(--text-tertiary); flex-shrink: 0; font-family: var(--font-mono); }
 
-  /* Feed items */
-  .idea-feed-item, .idea-feed-item-full {
-    display: flex; gap: 12px; align-items: flex-start;
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
-    padding: 12px; margin-bottom: 6px;
+  /* Tweet cards (Feed) */
+  .idea-feed-list { display: flex; flex-direction: column; gap: 0; }
+  .tweet-card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 0 10px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.15s ease;
+    cursor: pointer;
   }
-  .idea-feed-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
-  .idea-feed-icon-box {
-    width: 36px; height: 36px; border-radius: 8px; background: var(--tag-bg);
-    display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0;
+  .tweet-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
   }
-  .idea-feed-body { flex: 1; min-width: 0; }
-  .idea-feed-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-  .idea-feed-type {
-    font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
-    color: var(--accent); background: var(--nav-active); padding: 2px 6px; border-radius: 3px;
+  .tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
   }
-  .idea-feed-source { color: var(--text-secondary); font-size: 12px; font-weight: 500; }
-  .idea-feed-date { color: var(--text-tertiary); font-size: 11px; margin-left: auto; }
-  .idea-feed-content { color: var(--text); font-size: 13px; line-height: 1.5; }
-  .idea-feed-list { display: flex; flex-direction: column; gap: 8px; }
+  .tweet-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent-soft, var(--tag-bg));
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .tweet-user {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+  .tweet-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .tweet-handle {
+    font-size: 13px;
+    color: var(--text-tertiary);
+  }
+  .tweet-x-logo {
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+  }
+  .tweet-text {
+    font-size: 14.5px;
+    color: var(--text);
+    line-height: 1.55;
+    white-space: pre-line;
+    margin: 0 0 8px;
+  }
+  .tweet-date {
+    font-size: 12.5px;
+    color: var(--text-tertiary);
+  }
 
   /* Empty feed box */
   .idea-feed-empty-box {
