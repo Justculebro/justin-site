@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "The Unit of Underestimation"
 slug: "decades"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/decades"
 ---
 
 ![Source:Steinberg](/images/decades-eb4cfec8.png)

@@ -5,6 +5,7 @@ tags: ["markets", "investing"]
 excerpt: "Introducing Retrospection Into The Hype Cycle"
 slug: "on-hype-and-hot-air"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/on-hype-and-hot-air"
 ---
 
 ![Header image for On Hype And Hot Air](/images/on-hype-and-hot-air-a9691aa1.png)

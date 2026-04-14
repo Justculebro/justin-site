@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: ""
 slug: "tailwinds-whats-in-a-thesis"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/tailwinds-whats-in-a-thesis"
 ---
 
 ![Header image for Tailwinds: What's in a Thesis?](/images/tailwinds-whats-in-a-thesis-29916718.png)

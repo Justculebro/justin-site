@@ -5,6 +5,7 @@ tags: ["startups", "writing"]
 excerpt: "YC’s Formula For Startup Manufacturing"
 slug: "build-whats-fundable"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/build-whats-fundable"
 ---
 
 ![Header image for “Build What’s Fundable”](/images/build-whats-fundable-3e915410.png)

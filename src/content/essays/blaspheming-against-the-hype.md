@@ -5,6 +5,7 @@ tags: ["markets", "investing"]
 excerpt: "Trickle Down Hype-onomics"
 slug: "blaspheming-against-the-hype"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/blaspheming-against-the-hype"
 ---
 
 ![The Stoning of Stephen](/images/blaspheming-against-the-hype-bb456bf8.png)

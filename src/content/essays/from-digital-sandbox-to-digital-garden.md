@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "\"Once you start writing, you see things to write about everywhere.\""
 slug: "from-digital-sandbox-to-digital-garden"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/from-digital-sandbox-to-digital-garden"
 ---
 
 ![Header image for From Digital Sandbox To Digital Garden](/images/from-digital-sandbox-to-digital-garden-c14f2407.png)

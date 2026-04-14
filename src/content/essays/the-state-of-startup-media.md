@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "A Newfound Republic of Letters"
 slug: "the-state-of-startup-media"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-state-of-startup-media"
 ---
 
 ![Header image for The State of Startup Media](/images/the-state-of-startup-media-95374067.png)

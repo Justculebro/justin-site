@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "\"Where is the wisdom we have lost in knowledge? Where is the knowledge we have lost in information?\" (T.S. Eliot)"
 slug: "the-wrath-of-reading-and-writing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-wrath-of-reading-and-writing"
 ---
 
 ![Source:Writer's HQ](/images/the-wrath-of-reading-and-writing-98b76597.png)

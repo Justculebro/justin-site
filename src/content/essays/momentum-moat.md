@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "Poisoning The Well"
 slug: "momentum-moat"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/momentum-moat"
 ---
 
 ![Header image for Momentum != Moat](/images/momentum-moat-abf97499.png)

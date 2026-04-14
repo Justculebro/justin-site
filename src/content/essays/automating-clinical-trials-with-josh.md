@@ -5,6 +5,7 @@ tags: ["podcast", "ai"]
 excerpt: "\"Biology is not an indecipherable black box; it’s living code that we can model and understand.\""
 slug: "automating-clinical-trials-with-josh"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/automating-clinical-trials-with-josh"
 ---
 
 ![Header image for Automating Clinical Trials (with Josh Pacini @ Valinor)](/images/automating-clinical-trials-with-josh-79d7d942.png)

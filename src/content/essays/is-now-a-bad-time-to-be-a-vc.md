@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: ""
 slug: "is-now-a-bad-time-to-be-a-vc"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/is-now-a-bad-time-to-be-a-vc"
 ---
 
 ![Header image for Is Now a Bad Time To Be a VC?](/images/is-now-a-bad-time-to-be-a-vc-c45803bd.png)

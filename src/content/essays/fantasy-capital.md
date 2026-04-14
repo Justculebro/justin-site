@@ -5,6 +5,7 @@ tags: ["career", "investing"]
 excerpt: "Building a Better Venture Firm"
 slug: "fantasy-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/fantasy-capital"
 ---
 
 ![Header image for Fantasy Capital](/images/fantasy-capital-813b9896.png)

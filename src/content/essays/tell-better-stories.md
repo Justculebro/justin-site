@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "A Season of Storytelling"
 slug: "tell-better-stories"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/tell-better-stories"
 ---
 
 ![Surrender of Lord Cornwallis](/images/tell-better-stories-57039b2c.png)

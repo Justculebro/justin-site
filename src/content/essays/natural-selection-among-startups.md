@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: ""
 slug: "natural-selection-among-startups"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/natural-selection-among-startups"
 ---
 
 ![Header image for Natural Selection Among Startups](/images/natural-selection-among-startups-9e7b6a96.png)

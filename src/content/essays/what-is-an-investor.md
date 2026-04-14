@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Framing a Frame of Mind"
 slug: "what-is-an-investor"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/what-is-an-investor"
 ---
 
 ![Header image for What Is An Investor?](/images/what-is-an-investor-b92cbfde.png)

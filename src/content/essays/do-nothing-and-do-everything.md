@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "\"Doing nothing is often the most important something.\""
 slug: "do-nothing-and-do-everything"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/do-nothing-and-do-everything"
 ---
 
 ![Impression, Sunrise by Claude Monet](/images/do-nothing-and-do-everything-72701d03.png)

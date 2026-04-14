@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Learn To Keep From Dying"
 slug: "whats-in-a-post-mortem"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/whats-in-a-post-mortem"
 ---
 
 ![Header image for What's In a Post-Mortem?](/images/whats-in-a-post-mortem-91de3e67.png)

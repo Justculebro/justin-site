@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "“When people stop talking that’s when you get violence.” (Charlie Kirk)"
 slug: "the-ethos-of-nuance"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-ethos-of-nuance"
 ---
 
 ![Header image for The Ethos of Nuance](/images/the-ethos-of-nuance-c97332a5.png)

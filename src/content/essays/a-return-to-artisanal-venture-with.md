@@ -5,6 +5,7 @@ tags: ["podcast"]
 excerpt: "Building a Venture Firm With Authenticity"
 slug: "a-return-to-artisanal-venture-with"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/a-return-to-artisanal-venture-with"
 ---
 
 This is a conversation that feels really full circle for me. I've been writing every week for almost 3.5 years, and I credit the willingness to finally do that to advice I got from Rex Woodbury.

@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "A Conversation With Alexa Kayman"
 slug: "chasing-the-rush-of-creation"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/chasing-the-rush-of-creation"
 ---
 
 ![Source:Alexa Kayman](/images/chasing-the-rush-of-creation-de1a4dec.png)

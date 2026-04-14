@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "A Revolution Years In The Making"
 slug: "venture-capital-unbundled"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/venture-capital-unbundled"
 ---
 
 ![Header image for Venture Capital Unbundled](/images/venture-capital-unbundled-17cfd838.png)

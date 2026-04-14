@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "Why It's Easier To Say No Than It Is To Ask \"Why?\""
 slug: "the-cowards-conviction"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-cowards-conviction"
 ---
 
 ![Header image for The Coward's Conviction](/images/the-cowards-conviction-75a9e763.png)

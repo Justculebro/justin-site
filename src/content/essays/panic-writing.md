@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "The Art of Not Slowing Down"
 slug: "panic-writing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/panic-writing"
 ---
 
 ![Header image for Panic Writing](/images/panic-writing-49c03fbc.png)

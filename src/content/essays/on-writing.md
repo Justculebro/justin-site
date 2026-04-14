@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "A 30,000 Foot View"
 slug: "on-writing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/on-writing"
 ---
 
 ![Header image for On Writing](/images/on-writing-3a1aa5a6.png)

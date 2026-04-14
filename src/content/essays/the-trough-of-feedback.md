@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "The Insecurities of VCs Who Desperately Want To Be Liked"
 slug: "the-trough-of-feedback"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-trough-of-feedback"
 ---
 
 ![Source:Scrubs](/images/the-trough-of-feedback-8a0a9351.png)

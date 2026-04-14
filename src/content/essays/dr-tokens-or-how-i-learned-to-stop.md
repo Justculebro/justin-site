@@ -5,6 +5,7 @@ tags: ["markets", "ai"]
 excerpt: "The Glorious History of Productive Delusion, The Physics of a Bubble (A Scientific Framework), Genuine Benefits of Mass Technological Psychosis, and Why Everything Will Go According To Plan"
 slug: "dr-tokens-or-how-i-learned-to-stop"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/dr-tokens-or-how-i-learned-to-stop"
 ---
 
 ![Header image for Dr. Tokens or: How I Learned to Stop Worrying and Love the AI Bubble](/images/dr-tokens-or-how-i-learned-to-stop-423f9659.jpg)

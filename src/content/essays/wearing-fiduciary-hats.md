@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "A Schizophrenic Obligation"
 slug: "wearing-fiduciary-hats"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/wearing-fiduciary-hats"
 ---
 
 ![Header image for Wearing Fiduciary Hats](/images/wearing-fiduciary-hats-364e33e2.png)

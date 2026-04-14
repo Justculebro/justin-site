@@ -5,6 +5,7 @@ tags: ["career", "investing"]
 excerpt: "Good Business vs. Business As Usual"
 slug: "the-apprenticeship-litmus-test"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-apprenticeship-litmus-test"
 ---
 
 ![Header image for The Apprenticeship Litmus Test](/images/the-apprenticeship-litmus-test-8a61097f.png)

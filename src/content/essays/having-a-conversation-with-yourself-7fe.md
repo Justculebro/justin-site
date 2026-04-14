@@ -5,6 +5,7 @@ tags: ["venture-capital", "culture"]
 excerpt: "Revisiting Your Own Ideas"
 slug: "having-a-conversation-with-yourself-7fe"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/having-a-conversation-with-yourself-7fe"
 ---
 
 ![Header image for Having a Conversation With Yourself: 2024](/images/having-a-conversation-with-yourself-7fe-875d5cbc.png)

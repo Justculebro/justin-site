@@ -5,6 +5,7 @@ tags: ["personal", "writing"]
 excerpt: "Of Things That Matter Most"
 slug: "taking-a-breath"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/taking-a-breath"
 ---
 
 ![Header image for Taking a Breath](/images/taking-a-breath-e5f001ba.jpg)

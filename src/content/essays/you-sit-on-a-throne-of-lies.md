@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "The Fibs That Fashion Our Families & Faculties"
 slug: "you-sit-on-a-throne-of-lies"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/you-sit-on-a-throne-of-lies"
 ---
 
 ![Source:Elf](/images/you-sit-on-a-throne-of-lies-158ca2ee.png)

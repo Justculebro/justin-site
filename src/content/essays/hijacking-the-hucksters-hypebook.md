@@ -4,6 +4,7 @@ subtitle: "Reclaiming The Dark Arts of Charisma Capital"
 date: "2026-03-07"
 excerpt: "Dissecting 300 years of fundraising fraud to reverse-engineer a playbook for founders building real things — from Gregor MacGregor's invented country to WeWork's Community Adjusted EBITDA."
 tags: ['capital-allocation', 'language-of-discourse', 'historical-futurism', 'company-building']
+substack_url: "https://investing101.substack.com/p/hijacking-the-hucksters-hypebook"
 ---
 
 ![Header image for Hijacking The Huckster's Hypebook](/images/hijacking-the-hucksters-hypebook-bee5b90bdcd6.png)

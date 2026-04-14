@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "Dreaming Of The Global Knowledge Graph"
 slug: "i-wish-i-knew-how-to-quit-roam-research"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/i-wish-i-knew-how-to-quit-roam-research"
 ---
 
 ![Header image for I Wish I Knew How To Quit Roam Research](/images/i-wish-i-knew-how-to-quit-roam-research-2252e021.png)

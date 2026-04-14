@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Finding The Courage To Be Wrong"
 slug: "intellectual-seat-belts"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/intellectual-seat-belts"
 ---
 
 ![Header image for Intellectual Seat Belts](/images/intellectual-seat-belts-9d01cab7.png)

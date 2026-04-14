@@ -5,6 +5,7 @@ tags: ["culture", "writing"]
 excerpt: "Painting Two Dramatically Different Worlds in Our Collective Imaginations"
 slug: "science-fictions-dueling-fates"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/science-fictions-dueling-fates"
 ---
 
 *Quick Announcement: [Contrary Research](https://research.contrary.com/) is hiring for a [Research Analyst](https://contrary.notion.site/Research-Analyst-August-2024-8d3918fd774d418991505ea09f7543bb?pvs=4). To apply, reach out to research@contrary.com. Alright,* on with the show!

@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "Revisiting Your Own Ideas"
 slug: "having-a-conversation-with-yourself"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/having-a-conversation-with-yourself"
 ---
 
 ![Header image for Having a Conversation With Yourself: 2022](/images/having-a-conversation-with-yourself-6baef679.jpg)

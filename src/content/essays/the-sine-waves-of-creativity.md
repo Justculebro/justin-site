@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Constantia Prima"
 slug: "the-sine-waves-of-creativity"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-sine-waves-of-creativity"
 ---
 
 ![Header image for The Sine Waves of Creativity](/images/the-sine-waves-of-creativity-73aaa1df.png)

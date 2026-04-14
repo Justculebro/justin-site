@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "Revisiting My Own Ideas"
 slug: "having-a-conversation-with-myself"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/having-a-conversation-with-myself"
 ---
 
 ![Header image for Having a Conversation With Myself: 2025](/images/having-a-conversation-with-myself-7f4c083a.png)

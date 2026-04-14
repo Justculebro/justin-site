@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "Our Version of “The Things They Carried”"
 slug: "everything-i-own"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/everything-i-own"
 ---
 
 ![Header image for Everything I Own](/images/everything-i-own-7e488763.jpg)

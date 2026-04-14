@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "A Soulful Parody of Will Manidis' 'Legible to capital'"
 slug: "legible-to-yourself"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/legible-to-yourself"
 ---
 
 ![Source:A Woman I Once Knew](/images/legible-to-yourself-043cec56.png)

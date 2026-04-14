@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "The Human Element of Investing"
 slug: "learnable-empathy"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/learnable-empathy"
 ---
 
 ![Header image for Learnable Empathy](/images/learnable-empathy-10f32a9f.png)

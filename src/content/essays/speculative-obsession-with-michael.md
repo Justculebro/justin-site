@@ -5,6 +5,7 @@ tags: ["podcast"]
 excerpt: "Venture as a Thesis Delivery Mechanism"
 slug: "speculative-obsession-with-michael"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/speculative-obsession-with-michael"
 ---
 
 ![Header image for Speculative Obsession (with Michael Dempsey)](/images/speculative-obsession-with-michael-4146cb1f.png)

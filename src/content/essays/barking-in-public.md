@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "\"We're Just People, Man\""
 slug: "barking-in-public"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/barking-in-public"
 ---
 
 ![Header image for Barking in Public](/images/barking-in-public-65e74c40.png)

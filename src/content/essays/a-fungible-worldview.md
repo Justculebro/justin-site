@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "Why Cluely Is The Dark Spirit of Venture Capital, Whether You Like It Or Not"
 slug: "a-fungible-worldview"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/a-fungible-worldview"
 ---
 
 ![Header image for A Fungible Worldview](/images/a-fungible-worldview-5fbfd7c9.png)

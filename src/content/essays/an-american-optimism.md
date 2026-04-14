@@ -5,6 +5,7 @@ tags: ["culture", "personal"]
 excerpt: "An Ongoing Love Affair With The US of A"
 slug: "an-american-optimism"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/an-american-optimism"
 ---
 
 ![Header image for An American Optimism](/images/an-american-optimism-1a833991.jpg)

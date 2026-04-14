@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Thinking Through The History & Evolution of Hard Investing"
 slug: "deep-tech-for-deep-minds-or-deep"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/deep-tech-for-deep-minds-or-deep"
 ---
 
 ![Header image for Deep Tech For Deep Minds? Or Deep Pockets?](/images/deep-tech-for-deep-minds-or-deep-afe77559.png)

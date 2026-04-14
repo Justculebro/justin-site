@@ -5,6 +5,7 @@ tags: ["defense", "writing"]
 excerpt: "Combating The Hypnotized Consent of The Majority"
 slug: "the-cogsec-chronicles"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-cogsec-chronicles"
 ---
 
 ![Header image for The Cogsec Chronicles](/images/the-cogsec-chronicles-2d2ef2dc.png)

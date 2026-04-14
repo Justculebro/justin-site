@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "$1B Valuation < $1B ARR < $1B Cash Flow"
 slug: "building-an-actual-unicorn"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/building-an-actual-unicorn"
 ---
 
 ![Header image for Building an Actual Unicorn](/images/building-an-actual-unicorn-351ec880.png)

@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "Why Do People Hate Cathie Wood So Much?"
 slug: "the-gospel-of-ark-invest"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-gospel-of-ark-invest"
 ---
 
 ![Shoutout to my brother Chad, who is like my Midjourney chatbot when I need more complex images. If you're looking to buy3D printed Dungeons & Dragons paraphernalia, he's your guy!](/images/the-gospel-of-ark-invest-539d80b7.png)

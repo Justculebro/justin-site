@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Palmer Luckey's Perspective on Historical Futurism"
 slug: "back-to-the-future"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/back-to-the-future"
 ---
 
 ![Header image for Back To The Future](/images/back-to-the-future-31590085.png)

@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "The First Principles of Being Useful, Circling Back, and Backing Outliers"
 slug: "vcs-beyond-the-meme"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/vcs-beyond-the-meme"
 ---
 
 ![Header image for VCs Beyond The Meme](/images/vcs-beyond-the-meme-a3b26812.png)

@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Venture Capitalist’s Self-Loathing Mentality"
 slug: "the-groucho-marx-mandate"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-groucho-marx-mandate"
 ---
 
 ![Header image for The Groucho Marx Mandate](/images/the-groucho-marx-mandate-528c4e83.png)

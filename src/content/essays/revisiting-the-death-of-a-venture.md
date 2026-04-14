@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "A Surprising Spike In Venture Fund Mortality"
 slug: "revisiting-the-death-of-a-venture"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/revisiting-the-death-of-a-venture"
 ---
 
 ![Header image for Revisiting The Death of a Venture Fund](/images/revisiting-the-death-of-a-venture-a2405004.png)

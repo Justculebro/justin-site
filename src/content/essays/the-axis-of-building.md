@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "Speed vs. Cost"
 slug: "the-axis-of-building"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-axis-of-building"
 ---
 
 ![Header image for The Axis of Building](/images/the-axis-of-building-574a7bea.png)

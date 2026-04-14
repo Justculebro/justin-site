@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "An Epidemic of Unchecked Incompetence"
 slug: "the-incompetent-confidence-complex"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-incompetent-confidence-complex"
 ---
 
 ![Header image for The Incompetent Confidence Complex](/images/the-incompetent-confidence-complex-75acbcfc.png)

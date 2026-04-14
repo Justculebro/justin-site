@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "If You're Going To Rewire Your Brain, Rewire It For The Better"
 slug: "complaining-is-the-mind-killer"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/complaining-is-the-mind-killer"
 ---
 
 ![Header image for Complaining Is The Mind Killer](/images/complaining-is-the-mind-killer-16f08505.png)

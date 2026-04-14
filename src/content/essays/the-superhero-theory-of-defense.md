@@ -5,6 +5,7 @@ tags: ["defense", "culture"]
 excerpt: "“Our very strength invites challenge.”"
 slug: "the-superhero-theory-of-defense"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-superhero-theory-of-defense"
 ---
 
 ![Header image for The Superhero Theory of Defense](/images/the-superhero-theory-of-defense-e0754c2d.png)

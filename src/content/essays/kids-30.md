@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "Frameworks for Reflection"
 slug: "kids-30"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/kids-30"
 ---
 
 ![Header image for Kids 3.0](/images/kids-30-b4842c43.jpg)

@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "Unpacking The Layers of Dependencies That Delay Deviance"
 slug: "conviction-led-contrarianism"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/conviction-led-contrarianism"
 ---
 
 ![Header image for Conviction-Led Contrarianism](/images/conviction-led-contrarianism-cba65dad.png)

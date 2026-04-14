@@ -5,6 +5,7 @@ tags: ["venture-capital", "startups"]
 excerpt: ""
 slug: "the-renegades-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-renegades-of-venture-capital"
 ---
 
 ![Header image for The Renegades of Venture Capital](/images/the-renegades-of-venture-capital-7c2871a0.png)

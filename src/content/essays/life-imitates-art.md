@@ -5,6 +5,7 @@ tags: ["culture", "writing"]
 excerpt: "Science Fiction as a Product Roadmap"
 slug: "life-imitates-art"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/life-imitates-art"
 ---
 
 ![Header image for Life Imitates Art](/images/life-imitates-art-656cc762.png)

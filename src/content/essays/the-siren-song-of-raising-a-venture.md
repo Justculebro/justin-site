@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "\"Half the budget is a waste; we just don't know which half.\""
 slug: "the-siren-song-of-raising-a-venture"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-siren-song-of-raising-a-venture"
 ---
 
 ![Header image for The Siren Song of Raising a Venture Fund](/images/the-siren-song-of-raising-a-venture-a4aead8c.png)

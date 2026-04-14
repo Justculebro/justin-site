@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "Sizing Up Each Fund's Strategy"
 slug: "different-strokes-for-different-folks"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/different-strokes-for-different-folks"
 ---
 
 ![Header image for Different Strokes For Different Folks](/images/different-strokes-for-different-folks-4c5a2e10.png)

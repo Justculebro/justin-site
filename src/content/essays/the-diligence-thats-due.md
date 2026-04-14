@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Why We Never Ask The Right Questions"
 slug: "the-diligence-thats-due"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-diligence-thats-due"
 ---
 
 ![Source:Two Idiots, One Keyboard](/images/the-diligence-thats-due-e738fa94.png)

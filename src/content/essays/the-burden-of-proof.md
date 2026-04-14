@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "A Return To Critical Thinking"
 slug: "the-burden-of-proof"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-burden-of-proof"
 ---
 
 !["Philosopher in Meditation" by Rembrandt](/images/the-burden-of-proof-680209b4.png)

@@ -5,6 +5,7 @@ tags: ["startups", "culture"]
 excerpt: "From A Four Year Old Essay To A New Theology"
 slug: "its-time-to-build-but-build-what"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/its-time-to-build-but-build-what"
 ---
 
 ![Header image for It's Time To Build... But Build What?](/images/its-time-to-build-but-build-what-9fd434e4.png)

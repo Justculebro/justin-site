@@ -5,6 +5,7 @@ tags: ["markets", "investing"]
 excerpt: "Becoming Unprogrammable"
 slug: "the-bubble-brains-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-bubble-brains-of-venture-capital"
 ---
 
 ![Header image for The Bubble Brains of Silicon Valley](/images/the-bubble-brains-of-venture-capital-5cd6edd8.png)

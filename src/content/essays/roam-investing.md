@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Roam + Investing"
 slug: "roam-investing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/roam-investing"
 ---
 
 ![Header image for Networked Conviction](/images/roam-investing-ddbbfe26.png)

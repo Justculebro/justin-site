@@ -5,6 +5,7 @@ tags: ["spotlight", "investing"]
 excerpt: ""
 slug: "renegade-spotlight-synthesis"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/renegade-spotlight-synthesis"
 ---
 
 ![Header image for Renegade Spotlight: Synthesis](/images/renegade-spotlight-synthesis-b8dc8751.png)

@@ -5,6 +5,7 @@ tags: ["personal", "writing"]
 excerpt: "\"And Know That I Am God.\""
 slug: "be-still"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/be-still"
 ---
 
 ![Header image for Be Still](/images/be-still-35b278cd.png)

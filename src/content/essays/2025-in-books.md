@@ -5,6 +5,7 @@ tags: ["books", "personal"]
 excerpt: "Reshaping Capitalism, Epic World-Building, Collective Self vs. Self-Acceptance, & Mormon Apologetics"
 slug: "2025-in-books"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/2025-in-books"
 ---
 
 ![Header image for 2025 in Books](/images/2025-in-books-0725aca4.png)

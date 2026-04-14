@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "A Deep Dive From Contrary Research"
 slug: "the-openness-of-ai"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-openness-of-ai"
 ---
 
 ***This week I got to publish a deep dive I’ve been working on for a long time! Any big undertaking to write about AI is sure to be immediately outdated. But we tried to unpack the history, both of the AI moment we’re experiencing right now, and the issues the technology is facing that is putting experts, ideas, and institutions along an ideological spectrum from closed off to open source.***

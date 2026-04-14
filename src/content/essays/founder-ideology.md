@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "The Missionary, The Mercenary, and The Minstrel"
 slug: "founder-ideology"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/founder-ideology"
 ---
 
 ![Header image for Founder Ideology](/images/founder-ideology-db77c391.png)

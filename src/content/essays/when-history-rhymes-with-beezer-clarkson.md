@@ -5,6 +5,7 @@ tags: ["podcast", "investing"]
 excerpt: "The Wisdom of Cycles & The Importance of Thinking For Yourself"
 slug: "when-history-rhymes-with-beezer-clarkson"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/when-history-rhymes-with-beezer-clarkson"
 ---
 
 ![Header image for When History Rhymes (with Beezer Clarkson)](/images/when-history-rhymes-with-beezer-clarkson-cc0ca593.png)

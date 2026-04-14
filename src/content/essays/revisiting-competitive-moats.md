@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "Defensibility Is For Dummies"
 slug: "revisiting-competitive-moats"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/revisiting-competitive-moats"
 ---
 
 ![Source:Fat Baby Funds](/images/revisiting-competitive-moats-cbbced7e.png)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "A Model For Building Communities / Juntos / Cities / Holding Companies"
 slug: "teamshares-hold-cos-and-corporate"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/teamshares-hold-cos-and-corporate"
 ---
 
 ![Me & Kevin Shiiba (Teamshares Co-Founder)

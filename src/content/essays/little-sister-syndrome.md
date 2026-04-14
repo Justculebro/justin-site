@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Career-Building Blindness in Venture"
 slug: "little-sister-syndrome"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/little-sister-syndrome"
 ---
 
 ![Header image for Little Sister Syndrome](/images/little-sister-syndrome-6a4e8752.png)

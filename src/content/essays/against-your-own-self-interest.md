@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "The Art of Convincing Me I’m Not Getting Played"
 slug: "against-your-own-self-interest"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/against-your-own-self-interest"
 ---
 
 ![Source:YouTube](/images/against-your-own-self-interest-7add25a6.png)

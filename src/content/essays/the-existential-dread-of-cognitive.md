@@ -5,6 +5,7 @@ tags: ["ai", "writing"]
 excerpt: "“So much of our lives is meaningless, a self-canceling vacillation and futility.\""
 slug: "the-existential-dread-of-cognitive"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-existential-dread-of-cognitive"
 ---
 
 ![Header image for The Existential Dread of Cognitive Dissonance](/images/the-existential-dread-of-cognitive-2fff1bcb.png)

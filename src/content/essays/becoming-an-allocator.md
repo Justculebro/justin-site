@@ -5,6 +5,7 @@ tags: ["investing", "venture-capital"]
 excerpt: "Defining Your Personal Bar"
 slug: "becoming-an-allocator"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/becoming-an-allocator"
 ---
 
 ![Header image for Becoming An Allocator](/images/becoming-an-allocator-d564d66d.png)

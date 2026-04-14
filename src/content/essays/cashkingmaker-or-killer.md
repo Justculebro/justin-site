@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "A examination of when cash can anoint a market winner"
 slug: "cashkingmaker-or-killer"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/cashkingmaker-or-killer"
 ---
 
 ![Header image for Cash—Kingmaker or Killer?](/images/cashkingmaker-or-killer-070255dc.png)

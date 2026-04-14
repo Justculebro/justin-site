@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "\"Singles and doubles win games, but home runs win hearts.\""
 slug: "the-hits-business"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-hits-business"
 ---
 
 ![Header image for The Hits Business](/images/the-hits-business-64266c6a.png)

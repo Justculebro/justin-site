@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "\"What is doubt but letting a traitor in the back door of your soul?\""
 slug: "the-self-own-of-doubt"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-self-own-of-doubt"
 ---
 
 ![Header image for The Self-Own of Doubt](/images/the-self-own-of-doubt-691d1cd5.png)

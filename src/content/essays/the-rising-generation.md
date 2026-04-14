@@ -5,6 +5,7 @@ tags: ["culture", "career"]
 excerpt: "Whatever You Are, Be A Good One"
 slug: "the-rising-generation"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-rising-generation"
 ---
 
 ![Header image for The Rising Generation](/images/the-rising-generation-089d71ec.png)

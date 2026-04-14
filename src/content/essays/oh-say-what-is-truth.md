@@ -5,6 +5,7 @@ tags: ["culture"]
 excerpt: "The Need For A Renaissance of Truth Seekers"
 slug: "oh-say-what-is-truth"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/oh-say-what-is-truth"
 ---
 
 ![Header image for Oh Say, What is Truth?](/images/oh-say-what-is-truth-77510971.png)

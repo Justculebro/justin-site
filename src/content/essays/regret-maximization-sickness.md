@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Too busy languishing in regret to make room for hope"
 slug: "regret-maximization-sickness"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/regret-maximization-sickness"
 ---
 
 ![Source:Clark Kelley Price](/images/regret-maximization-sickness-040e4dc2.png)

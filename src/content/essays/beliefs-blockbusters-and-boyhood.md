@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "A Smorgasbord of Reactions"
 slug: "beliefs-blockbusters-and-boyhood"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/beliefs-blockbusters-and-boyhood"
 ---
 
 ![Header image for Beliefs, Blockbusters, and Boyhood](/images/beliefs-blockbusters-and-boyhood-b6c94514.png)

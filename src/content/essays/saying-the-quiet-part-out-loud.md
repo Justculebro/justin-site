@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "\"When someone tells you who they are, believe them.\""
 slug: "saying-the-quiet-part-out-loud"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/saying-the-quiet-part-out-loud"
 ---
 
 ![Header image for Saying The Quiet Part Out Loud](/images/saying-the-quiet-part-out-loud-86671c7f.png)

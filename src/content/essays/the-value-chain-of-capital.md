@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "And The VC \"Back-Scratch\" Circle"
 slug: "the-value-chain-of-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-value-chain-of-capital"
 ---
 
 ![Header image for The Value Chain of Capital](/images/the-value-chain-of-capital-9fd002a3.png)

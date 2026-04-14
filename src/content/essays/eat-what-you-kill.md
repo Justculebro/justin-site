@@ -5,6 +5,7 @@ tags: ["investing", "career"]
 excerpt: "The Meritocracy of Venture Capital"
 slug: "eat-what-you-kill"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/eat-what-you-kill"
 ---
 
 ![Header image for Eat What You Kill](/images/eat-what-you-kill-c7354b10.png)

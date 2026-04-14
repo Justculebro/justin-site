@@ -5,6 +5,7 @@ tags: ["podcast"]
 excerpt: "Perplexity's journey, plus an update on the evolution of Investing 101"
 slug: "the-inevitability-of-advertising"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/the-inevitability-of-advertising"
 ---
 
 ## An Update on The Evolution of Investing 101

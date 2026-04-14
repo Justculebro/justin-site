@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "A lot of you haven't lost a fortune and it shows"
 slug: "pain"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/pain"
 ---
 
 ![Header image for I Love The Taste of Pain in the Morning](/images/pain-c92bf1ef.jpg)

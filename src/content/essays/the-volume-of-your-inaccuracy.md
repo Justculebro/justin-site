@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Currency of the Attention Economy Is Loudness"
 slug: "the-volume-of-your-inaccuracy"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-volume-of-your-inaccuracy"
 ---
 
 ![Header image for The Volume of Your Inaccuracy](/images/the-volume-of-your-inaccuracy-8607f2ad.png)

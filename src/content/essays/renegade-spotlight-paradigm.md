@@ -5,6 +5,7 @@ tags: ["spotlight", "investing"]
 excerpt: ""
 slug: "renegade-spotlight-paradigm"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/renegade-spotlight-paradigm"
 ---
 
 ![Header image for Renegade Spotlight: Paradigm](/images/renegade-spotlight-paradigm-f8afa9d5.png)

@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "You Best Start Believing That Psychology Matters. Its All That Matters"
 slug: "the-inescapable-debate-of-human-nature"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-inescapable-debate-of-human-nature"
 ---
 
 ![Header image for The Inescapable Debate of Human Nature](/images/the-inescapable-debate-of-human-nature-a0e350ce.png)

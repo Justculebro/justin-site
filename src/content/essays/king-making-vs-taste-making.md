@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "Capital Can Only Control So Much"
 slug: "king-making-vs-taste-making"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/king-making-vs-taste-making"
 ---
 
 ![Header image for King-Making vs. Taste-Making](/images/king-making-vs-taste-making-fce04923.png)

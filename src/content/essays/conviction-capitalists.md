@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "The Clash of Conviction vs. Consensus"
 slug: "conviction-capitalists"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/conviction-capitalists"
 ---
 
 ![Header image for Conviction Capitalists](/images/conviction-capitalists-6184887a.png)

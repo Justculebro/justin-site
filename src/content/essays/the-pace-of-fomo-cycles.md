@@ -5,6 +5,7 @@ tags: ["markets"]
 excerpt: "Sharing a recent podcast appearance"
 slug: "the-pace-of-fomo-cycles"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-pace-of-fomo-cycles"
 ---
 
 ![Header image for The Pace of FOMO Cycles](/images/the-pace-of-fomo-cycles-9936706c.jpg)

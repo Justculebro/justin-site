@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Rarest of Commodities, But The Furthest Reaching Impact"
 slug: "the-non-zero-sum-game-of-ambition"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-non-zero-sum-game-of-ambition"
 ---
 
 ![Source: Cinema Sugar](/images/the-non-zero-sum-game-of-ambition-c9978974.png)

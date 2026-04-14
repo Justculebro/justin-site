@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Consolidation Is Coming In 2023"
 slug: "age-of-acquisition"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/age-of-acquisition"
 ---
 
 ![Header image for The Age of Acquisition](/images/age-of-acquisition-8ef3ef13.png)

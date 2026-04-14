@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "Pondering The Future Form of My Writing Function"
 slug: "the-future-of-investing-101"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-future-of-investing-101"
 ---
 
 ![Header image for The Future of Investing 101](/images/the-future-of-investing-101-7c5032de.png)

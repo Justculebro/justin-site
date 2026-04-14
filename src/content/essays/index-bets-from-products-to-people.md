@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: ""
 slug: "index-bets-from-products-to-people"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/index-bets-from-products-to-people"
 ---
 
 ![Header image for Index Bets: From Products to People](/images/index-bets-from-products-to-people-a427e7bf.png)

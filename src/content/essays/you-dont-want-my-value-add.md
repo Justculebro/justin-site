@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "When \"Let Me Know How I Can Be Helpful\" Fails"
 slug: "you-dont-want-my-value-add"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/you-dont-want-my-value-add"
 ---
 
 ![Header image for You Don’t Want My Value Add](/images/you-dont-want-my-value-add-076043c0.png)

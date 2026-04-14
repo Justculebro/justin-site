@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "Trade-Offs In Everything You Do"
 slug: "the-four-pillars-of-venture-investing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-four-pillars-of-venture-investing"
 ---
 
 ![Header image for The Four Pillars of Venture Investing](/images/the-four-pillars-of-venture-investing-88756680.png)

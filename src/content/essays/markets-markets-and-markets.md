@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "Total Addressable Mirage? Or Miracle?"
 slug: "markets-markets-and-markets"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/markets-markets-and-markets"
 ---
 
 ![Header image for Markets, Markets, and Markets](/images/markets-markets-and-markets-22d8bd71.png)

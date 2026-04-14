@@ -5,6 +5,7 @@ tags: ["markets"]
 excerpt: "Is The Juice Worth The Squeeze?"
 slug: "the-mysteries-of-an-economic-engine"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-mysteries-of-an-economic-engine"
 ---
 
 ![Header image for The Mysteries of an Economic Engine](/images/the-mysteries-of-an-economic-engine-ade5c74e.png)

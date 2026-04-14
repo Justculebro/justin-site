@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "April Fool's, The Optimist's Christmas + Learning Is Good, Actually"
 slug: "the-glass-half-war-empty-or-full"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-glass-half-war-empty-or-full"
 ---
 
 ![Header image for The Glass-Half War: Empty or Full?](/images/the-glass-half-war-empty-or-full-ce6ea9e1.png)

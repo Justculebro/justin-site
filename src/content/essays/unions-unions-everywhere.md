@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "And... Not a Good Idea?"
 slug: "unions-unions-everywhere"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/unions-unions-everywhere"
 ---
 
 *I’m quite late today on two accounts. First? I’m about 27 hours later than usual because I was enjoying a weekend with the very talented community in Contrary at our annual retreat. So this piece is dedicated to all those folks whose company I got to enjoy this weekend.*

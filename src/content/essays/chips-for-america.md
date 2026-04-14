@@ -5,6 +5,7 @@ tags: ["defense", "culture"]
 excerpt: "Building An American TSMC"
 slug: "chips-for-america"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/chips-for-america"
 ---
 
 ![Header image for Chips For America](/images/chips-for-america-431b3363.png)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "The Collective Hallucination of Oncoming Capital"
 slug: "dreaming-of-dry-powder"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/dreaming-of-dry-powder"
 ---
 
 ![Header image for Dreaming Of Dry Powder](/images/dreaming-of-dry-powder-9c3d2283.png)

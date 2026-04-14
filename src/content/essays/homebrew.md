@@ -5,6 +5,7 @@ tags: ["spotlight", "startups"]
 excerpt: ""
 slug: "homebrew"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/homebrew"
 ---
 
 ![Header image for Renegade Spotlight: Homebrew](/images/homebrew-b032e344.png)

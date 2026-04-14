@@ -5,6 +5,7 @@ tags: ["culture", "startups"]
 excerpt: "An Ode To Revisionist History"
 slug: "what-wicked-taught-me-about-b2b-sales"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/what-wicked-taught-me-about-b2b-sales"
 ---
 
 ![Header image for What Wicked Taught Me About B2B Sales](/images/what-wicked-taught-me-about-b2b-sales-0f88eb56.jpg)

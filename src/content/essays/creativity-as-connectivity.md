@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "Stepping Back Again To Reflect"
 slug: "creativity-as-connectivity"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/creativity-as-connectivity"
 ---
 
 !["The Tree of Life" by Gustav Klimt (1909)

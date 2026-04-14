@@ -5,6 +5,7 @@ tags: ["culture", "investing"]
 excerpt: "Dreaming The Dream Takes Practice"
 slug: "learning-to-dream"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/learning-to-dream"
 ---
 
 ![Header image for Learning To Dream](/images/learning-to-dream-9e5fa713.jpg)

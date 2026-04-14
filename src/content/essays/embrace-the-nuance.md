@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "A Struggle At The Extremes"
 slug: "embrace-the-nuance"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/embrace-the-nuance"
 ---
 
 ![Header image for Embrace The Nuance](/images/embrace-the-nuance-b04284fb.png)

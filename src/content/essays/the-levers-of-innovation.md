@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "A Shortage of Founders, Funding, Foundations, or Guts?"
 slug: "the-levers-of-innovation"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-levers-of-innovation"
 ---
 
 ![Header image for The Levers of Innovation](/images/the-levers-of-innovation-4903fd8e.png)

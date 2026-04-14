@@ -5,6 +5,7 @@ tags: ["venture-capital", "startups"]
 excerpt: "Power of the People"
 slug: "the-unbundling-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-unbundling-of-venture-capital"
 ---
 
 ![Header image for The Unbundling of Venture Capital](/images/the-unbundling-of-venture-capital-caeced98.png)

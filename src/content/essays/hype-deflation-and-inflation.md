@@ -5,6 +5,7 @@ tags: ["markets", "investing"]
 excerpt: "The Endless Ebb And Flow"
 slug: "hype-deflation-and-inflation"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/hype-deflation-and-inflation"
 ---
 
 ![Header image for Hype Deflation & Inflation](/images/hype-deflation-and-inflation-b46683dc.png)

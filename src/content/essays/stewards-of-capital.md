@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "To Burn? Or Not To Burn?"
 slug: "stewards-of-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/stewards-of-capital"
 ---
 
 ![Header image for Stewards of Capital](/images/stewards-of-capital-f04b054e.png)

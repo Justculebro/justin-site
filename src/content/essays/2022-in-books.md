@@ -5,6 +5,7 @@ tags: ["books"]
 excerpt: "Storytelling, Leadership, Predicting The Future, and Faithfully Asking Questions"
 slug: "2022-in-books"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/2022-in-books"
 ---
 
 *I originally posted this [on my personal website](https://kwharrison13.com/ad17f7d516334a96b42ad8da486887e6) with links to my past reading lists and thoughts.*

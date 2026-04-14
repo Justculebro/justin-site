@@ -5,6 +5,7 @@ tags: ["books", "culture"]
 excerpt: "Reinventing Your Information Input Systems"
 slug: "books-20"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/books-20"
 ---
 
 *A few weeks ago, [I wrote about](https://investing1012dot0.substack.com/p/long-enough-to-matter) ~20 different ideas that I've been thinking about touching on this year. Rather than start to randomly prioritize, I thought I'd ask my readers (you) what you were most interested in. [The Puritans of Venture Capital](https://investing1012dot0.substack.com/p/the-puritans-of-venture-capital) was the top pick. Second up? This one:*

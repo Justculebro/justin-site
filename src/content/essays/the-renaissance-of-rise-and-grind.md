@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "Working Hard, Or Hardly Working?"
 slug: "the-renaissance-of-rise-and-grind"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-renaissance-of-rise-and-grind"
 ---
 
 ![Header image for The Renaissance of Rise and Grind](/images/the-renaissance-of-rise-and-grind-66587832.png)

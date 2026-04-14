@@ -5,6 +5,7 @@ tags: ["startups", "career"]
 excerpt: ""
 slug: "the-natural-selection-of-time"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-natural-selection-of-time"
 ---
 
 ![Header image for The Natural Selection of Time](/images/the-natural-selection-of-time-ec3f0738.png)

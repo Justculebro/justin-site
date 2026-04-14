@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "Does \"Everyone Is An Investor\" Still Hold in a Recession?"
 slug: "grabbing-the-bear-by-the-horns"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/grabbing-the-bear-by-the-horns"
 ---
 
 This is an exciting day for me! When I joined a new job a few years ago I met my new office mate [Rex Woodbury](https://twitter.com/rex_woodbury) He’s not only one of the most thoughtful and enjoyable people I know, but he was also one of the biggest inspirations for me to start writing more consistently. Rex writes a phenomenal weekly newsletter called [Digital Native](https://digitalnative.substack.com/) and it’s my go-to node on all things culture and internet trends. Couldn’t be more excited to blend our styles of macro and micro thinking in my first collaborative writing experiment.

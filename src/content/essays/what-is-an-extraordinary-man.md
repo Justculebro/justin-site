@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "The Moral Imperative To Grind, The Social Safety Net, & The Mournful Middle Class"
 slug: "what-is-an-extraordinary-man"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/what-is-an-extraordinary-man"
 ---
 
 ![Wanderer above the Sea of Fog, Caspar David Friedrich](/images/what-is-an-extraordinary-man-247043d5.png)

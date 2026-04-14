@@ -5,6 +5,7 @@ tags: ["spotlight", "investing"]
 excerpt: ""
 slug: "lowercarbon"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/lowercarbon"
 ---
 
 ![Header image for Renegade Spotlight: Lowercarbon](/images/lowercarbon-c426075a.png)

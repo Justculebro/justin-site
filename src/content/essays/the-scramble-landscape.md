@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Acquisitions, Shutdowns, and Layoffs Oh My"
 slug: "the-scramble-landscape"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-scramble-landscape"
 ---
 
 ![Header image for The Scramble Landscape](/images/the-scramble-landscape-56f5f983.jpg)

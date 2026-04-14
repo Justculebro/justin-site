@@ -5,6 +5,7 @@ tags: ["investing", "ai"]
 excerpt: "Move Fast and Break Laws"
 slug: "the-1b-rorschach-test"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-1b-rorschach-test"
 ---
 
 I have three sons, but only two of them are conversational (so far). Of the two chatty ones, they approach life a little differently. Dax is a rule follower, always looking for the right answer. Jed, on the other hand? His life is lived through a lens that none of us can see. Imagination station is the only station his train stops at.

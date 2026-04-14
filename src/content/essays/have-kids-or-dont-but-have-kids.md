@@ -5,6 +5,7 @@ tags: ["personal", "investing"]
 excerpt: "Making The Case For Hope Maximalism"
 slug: "have-kids-or-dont-but-have-kids"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/have-kids-or-dont-but-have-kids"
 ---
 
 ![Header image for Have Kids. Or Don't. But Have Kids.](/images/have-kids-or-dont-but-have-kids-e127f121.png)

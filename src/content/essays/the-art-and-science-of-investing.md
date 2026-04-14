@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Reinventing The Practice In The Process Of Learning It"
 slug: "the-art-and-science-of-investing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-art-and-science-of-investing"
 ---
 
 ![Header image for The Art and Science of Investing](/images/the-art-and-science-of-investing-b0221110.png)

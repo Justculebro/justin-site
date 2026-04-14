@@ -5,6 +5,7 @@ tags: ["markets", "culture"]
 excerpt: "Imagination, Creation, Capture, Conversion"
 slug: "the-value-cycle"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-value-cycle"
 ---
 
 ![Header image for The Value Cycle](/images/the-value-cycle-59020b33.png)

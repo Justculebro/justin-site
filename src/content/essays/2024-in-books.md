@@ -5,6 +5,7 @@ tags: ["books", "personal"]
 excerpt: "Defense Deep Dives, Intellectual Faith, and More"
 slug: "2024-in-books"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/2024-in-books"
 ---
 
 *I originally posted this [on my personal website](https://kwharrison13.com/15489f3ce1af801dbd92d2ad17ec283a) where you can see the full list of the books I read this year and my broader library.*

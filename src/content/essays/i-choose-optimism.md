@@ -5,6 +5,7 @@ tags: ["personal", "investing"]
 excerpt: "And All The Responsibility That Goes With It"
 slug: "i-choose-optimism"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/i-choose-optimism"
 ---
 
 ![Header image for I Choose Optimism](/images/i-choose-optimism-8a33950d.jpg)

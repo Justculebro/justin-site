@@ -5,6 +5,7 @@ tags: ["investing", "personal"]
 excerpt: "\"When everyone is super, no one will be.\""
 slug: "why-bother"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/why-bother"
 ---
 
 ![Header image for Why Bother?](/images/why-bother-a6f22e5a.png)

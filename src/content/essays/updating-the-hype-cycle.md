@@ -5,6 +5,7 @@ tags: ["markets", "investing"]
 excerpt: "Reflecting on The AI Moment"
 slug: "updating-the-hype-cycle"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/updating-the-hype-cycle"
 ---
 
 ![Header image for Updating The Hype Cycle](/images/updating-the-hype-cycle-21756d98.png)

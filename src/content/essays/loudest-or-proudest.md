@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Balancing Big Promises and Big Payoffs"
 slug: "loudest-or-proudest"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/loudest-or-proudest"
 ---
 
 ![Header image for Loudest or Proudest](/images/loudest-or-proudest-c7299bc2.png)

@@ -5,6 +5,7 @@ tags: ["investing", "personal"]
 excerpt: "Let Your \"Why\" Be Your Guide"
 slug: "know-thyself"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/know-thyself"
 ---
 
 ![Know Thyself](/images/know-thyself-a0879bb7.png)

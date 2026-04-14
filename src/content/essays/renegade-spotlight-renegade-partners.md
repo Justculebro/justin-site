@@ -5,6 +5,7 @@ tags: ["spotlight", "startups"]
 excerpt: "\"Turning Startups Into Companies\""
 slug: "renegade-spotlight-renegade-partners"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/renegade-spotlight-renegade-partners"
 ---
 
 ![Header image for Renegade Spotlight: Renegade Partners](/images/renegade-spotlight-renegade-partners-1a56d50b.png)

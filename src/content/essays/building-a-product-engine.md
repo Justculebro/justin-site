@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "The Pursuit of \"Venture Scale\""
 slug: "building-a-product-engine"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/building-a-product-engine"
 ---
 
 ![Header image for Building a Product Engine](/images/building-a-product-engine-66475a71.png)

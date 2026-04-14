@@ -5,6 +5,7 @@ tags: ["investing", "ai"]
 excerpt: "First, consumer. Then, software. Now? AI?"
 slug: "the-great-circle-of-life"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-great-circle-of-life"
 ---
 
 ![The Great Circle of Life](/images/the-great-circle-of-life-d8accaae.png)

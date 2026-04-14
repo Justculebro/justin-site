@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "The Other End Of The Valuation Stick"
 slug: "player-different-stupider-games"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/player-different-stupider-games"
 ---
 
 ![Header image for Playing Different (Stupider) Games](/images/player-different-stupider-games-ddd22db2.png)

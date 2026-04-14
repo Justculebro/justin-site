@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "Or Why Hopin Is Everything Wrong With Venture Capital"
 slug: "institutionalized-belief-in-the-greater"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/institutionalized-belief-in-the-greater"
 ---
 
 ![The Last Unicornis one of those ridiculously weird movies that I remember from my childhood, but very few people have seen. But in retrospect, a movie with imagery like a flaming bull chasing a unicorn? It's crazy I haven't used it before.](/images/institutionalized-belief-in-the-greater-72dda9db.jpg)

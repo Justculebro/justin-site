@@ -5,6 +5,7 @@ tags: ["culture", "books"]
 excerpt: "An Investment Memo"
 slug: "america"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/america"
 ---
 
 ![Header image for America](/images/america-c4959b9d.webp)

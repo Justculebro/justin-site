@@ -5,6 +5,7 @@ tags: ["venture-capital", "podcast"]
 excerpt: "Mapping The Systemic Flaws in the Venture Ecosystem"
 slug: "the-7-deadly-sins-of-venture-capital"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/the-7-deadly-sins-of-venture-capital"
 ---
 
 ![Header image for The 7 Deadly Sins of Venture Capital (with Dan Gray)](/images/the-7-deadly-sins-of-venture-capital-07092210.png)

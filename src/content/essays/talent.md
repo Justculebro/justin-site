@@ -5,6 +5,7 @@ tags: ["career", "venture-capital"]
 excerpt: ""
 slug: "talent"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/talent"
 ---
 
 ![Header image for Why Most VCs Suck At Talent](/images/talent-7bc9241c.png)

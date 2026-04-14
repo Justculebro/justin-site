@@ -5,6 +5,7 @@ tags: ["culture", "investing"]
 excerpt: "The Evolution of Interest"
 slug: "the-meme-economy"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-meme-economy"
 ---
 
 ![Header image for The Meme Economy](/images/the-meme-economy-767f8fa1.jpg)

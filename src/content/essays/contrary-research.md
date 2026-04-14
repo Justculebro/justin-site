@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Best Starting Point To Understand Any Private Tech Company"
 slug: "contrary-research"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/contrary-research"
 ---
 
 ![Header image for Contrary Research](/images/contrary-research-e95eb444.jpg)

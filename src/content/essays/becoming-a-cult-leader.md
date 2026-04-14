@@ -5,6 +5,7 @@ tags: ["culture", "investing"]
 excerpt: "Make Me Believe You"
 slug: "becoming-a-cult-leader"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/becoming-a-cult-leader"
 ---
 
 ![Header image for Becoming a Cult Leader](/images/becoming-a-cult-leader-32d218a9.png)

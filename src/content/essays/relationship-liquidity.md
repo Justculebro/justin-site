@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Haaave you met so-and-so?"
 slug: "relationship-liquidity"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/relationship-liquidity"
 ---
 
 ![Header image for Relationship Liquidity](/images/relationship-liquidity-53cb046f.png)

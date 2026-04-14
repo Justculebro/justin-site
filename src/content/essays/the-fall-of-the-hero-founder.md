@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Reflecting On The Most Interesting Timeline"
 slug: "the-fall-of-the-hero-founder"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-fall-of-the-hero-founder"
 ---
 
 ![Header image for The Leaders of Movements](/images/the-fall-of-the-hero-founder-2c5eaacb.png)

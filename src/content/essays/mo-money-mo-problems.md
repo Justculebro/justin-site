@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "The Math Behind Venture Fund AUM"
 slug: "mo-money-mo-problems"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/mo-money-mo-problems"
 ---
 
 ![Header image for Mo' Money, Mo' Problems](/images/mo-money-mo-problems-7f471c13.webp)

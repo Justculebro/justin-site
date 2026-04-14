@@ -5,6 +5,7 @@ tags: ["investing", "markets"]
 excerpt: "In other words? “The ends rewrite the means.”"
 slug: "the-outcome-distortion-complex"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-outcome-distortion-complex"
 ---
 
 ![Header image for The Outcome Distortion Complex](/images/the-outcome-distortion-complex-36a397b9.png)

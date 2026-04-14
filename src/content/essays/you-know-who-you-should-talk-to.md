@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Art of the Outreach"
 slug: "you-know-who-you-should-talk-to"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/you-know-who-you-should-talk-to"
 ---
 
 ![Header image for You Know Who You Should Talk To?](/images/you-know-who-you-should-talk-to-8a165f68.png)

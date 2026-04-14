@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "Plus, an excerpt on Midjourney"
 slug: "oops-i-did-it-again"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/oops-i-did-it-again"
 ---
 
 ![Header image for Oops, I Did It Again](/images/oops-i-did-it-again-ad008e41.jpg)

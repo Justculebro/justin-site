@@ -5,6 +5,7 @@ tags: ["investing", "writing"]
 excerpt: "Revolution Through Evolution"
 slug: "investing-101"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/investing-101"
 ---
 
 ![Header image for Investing 101](/images/investing-101-eb9f1063.png)

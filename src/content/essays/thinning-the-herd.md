@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "The Culling of The Unicorns"
 slug: "thinning-the-herd"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/thinning-the-herd"
 ---
 
 ![Header image for Thinning The Herd](/images/thinning-the-herd-bfa180bc.png)

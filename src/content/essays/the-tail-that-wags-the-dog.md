@@ -5,6 +5,7 @@ tags: ["investing", "ai"]
 excerpt: "Why Are Mommy & Daddy Fighting About AI?"
 slug: "the-tail-that-wags-the-dog"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-tail-that-wags-the-dog"
 ---
 
 ![Pavlov’s Dog](/images/the-tail-that-wags-the-dog-920d5fb1.jpg)

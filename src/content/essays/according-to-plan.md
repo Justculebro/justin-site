@@ -5,6 +5,7 @@ tags: ["markets"]
 excerpt: ""
 slug: "according-to-plan"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/according-to-plan"
 ---
 
 ![Header image for All According To The Terrible Plan](/images/according-to-plan-32b3f7c9.png)

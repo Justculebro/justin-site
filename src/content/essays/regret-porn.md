@@ -5,6 +5,7 @@ tags: ["investing", "personal"]
 excerpt: "\"You can either run from it, or... learn from it!\""
 slug: "regret-porn"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/regret-porn"
 ---
 
 ![Header image for Regret Porn](/images/regret-porn-dedc56c8.png)

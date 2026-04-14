@@ -5,6 +5,7 @@ tags: ["investing", "venture-capital"]
 excerpt: "Venture Capital Is The Name, AUM Collection Is The Game"
 slug: "the-blackstone-of-innovation"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-blackstone-of-innovation"
 ---
 
 ![Header image for The Blackstone of Innovation](/images/the-blackstone-of-innovation-346632b9.png)

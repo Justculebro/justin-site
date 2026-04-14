@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: ""
 slug: "youre-the-only-investment-that-matters"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/youre-the-only-investment-that-matters"
 ---
 
 ![Header image for You're The Only Investment That Matters](/images/youre-the-only-investment-that-matters-4cccc2ad.png)

@@ -5,6 +5,7 @@ tags: ["investing", "personal"]
 excerpt: "Casting Off Doe-Eyed Optimism and Dangerous Doomerism Alike"
 slug: "the-techno-solutionist-commitment"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-techno-solutionist-commitment"
 ---
 
 ![The Techno-Solutionist Commitment](/images/the-techno-solutionist-commitment-6d45b694.png)

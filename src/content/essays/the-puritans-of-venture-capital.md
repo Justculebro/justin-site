@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "Cottage Keepers vs. Capital Agglomerators"
 slug: "the-puritans-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-puritans-of-venture-capital"
 ---
 
 *Last week, [I wrote about](https://investing1012dot0.substack.com/p/long-enough-to-matter) ~20 different ideas that I've been thinking about touching on this year. Rather than starting to randomly prioritize, I thought I'd ask my readers (you) what you were most interested in. I very quickly realized I'd made a critical mistake. I should have sent out a survey or something, because inviting responses to the email invited hundreds of replies into my inbox / Twitter DMs that I had to manually review one by one. Live and learn! But after tallying the results, the topic you were most interested was this one:*

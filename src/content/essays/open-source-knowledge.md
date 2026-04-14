@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Announcing Contrary Research"
 slug: "open-source-knowledge"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/open-source-knowledge"
 ---
 
 ![Neurons firing in the brain](/images/open-source-knowledge-1d077c7b.png)

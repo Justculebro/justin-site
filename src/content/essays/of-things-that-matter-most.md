@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "An Allocator of Time"
 slug: "of-things-that-matter-most"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/of-things-that-matter-most"
 ---
 
 ![Seattle 2016; the first place my wife and I lived away from family](/images/of-things-that-matter-most-e44782a5.jpg)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "A Case Study On The Venture Process"
 slug: "the-rise-of-the-cash-man"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-rise-of-the-cash-man"
 ---
 
 ![Header image for The Rise of The Cash Man](/images/the-rise-of-the-cash-man-8e75d193.png)

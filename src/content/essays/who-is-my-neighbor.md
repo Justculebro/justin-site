@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "A Brief Repose From Investing To Reflect On Service"
 slug: "who-is-my-neighbor"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/who-is-my-neighbor"
 ---
 
 ![Header image for Who Is My Neighbor?](/images/who-is-my-neighbor-39272645.png)

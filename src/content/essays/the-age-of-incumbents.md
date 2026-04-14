@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Distribution + Data Become Concentration Functions"
 slug: "the-age-of-incumbents"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-age-of-incumbents"
 ---
 
 ![Header image for The Age of Incumbents](/images/the-age-of-incumbents-e6987ad3.png)

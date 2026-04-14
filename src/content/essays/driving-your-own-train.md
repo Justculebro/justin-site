@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Two kinds of people in the world: Those who drive, and those who ride"
 slug: "driving-your-own-train"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/driving-your-own-train"
 ---
 
 ![Header image for Driving Your Own Train](/images/driving-your-own-train-6e6dc693.png)

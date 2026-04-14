@@ -5,6 +5,7 @@ tags: ["writing", "personal"]
 excerpt: "Fetishization of Performative Failure Creates a Phobia of Actual Failure"
 slug: "performative-failure"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/performative-failure"
 ---
 
 ![Header image for Performative Failure](/images/performative-failure-390f49f7.png)

@@ -5,6 +5,7 @@ tags: ["culture", "investing"]
 excerpt: "Using Science Fiction to Invent the Future"
 slug: "historical-futurism"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/historical-futurism"
 ---
 
 ![Header image for Historical Futurism](/images/historical-futurism-e28752a0.png)

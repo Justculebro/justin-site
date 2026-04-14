@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "\"The universe is made of stories, not of atoms.\" (Muriel Rukeyser)"
 slug: "the-storytelling-of-investing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-storytelling-of-investing"
 ---
 
 ![Header image for The Storytelling of Investing](/images/the-storytelling-of-investing-9c9b6bea.png)

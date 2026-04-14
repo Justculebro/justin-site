@@ -5,6 +5,7 @@ tags: ["books"]
 excerpt: "Fiction, Playbooks, and a Call For Improvement"
 slug: "2023-in-books"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/2023-in-books"
 ---
 
 ![Header image for 2023 In Books](/images/2023-in-books-023ece8b.jpg)

@@ -5,6 +5,7 @@ tags: ["investing", "career"]
 excerpt: ""
 slug: "contrary-my-renegade-of-choice"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/contrary-my-renegade-of-choice"
 ---
 
 ![Header image for Contrary: My Renegade of Choice](/images/contrary-my-renegade-of-choice-b94883b5.png)

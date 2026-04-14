@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "When Everyone is Special Nobody is"
 slug: "productization"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/productization"
 ---
 
 ![Header image for The Productization of Venture Capital](/images/productization-9557afc9.png)

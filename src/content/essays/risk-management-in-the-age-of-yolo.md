@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "Betting The Mouse To Save The House"
 slug: "risk-management-in-the-age-of-yolo"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/risk-management-in-the-age-of-yolo"
 ---
 
 ![Header image for Risk Management In The Age Of YOLO](/images/risk-management-in-the-age-of-yolo-7c779105.png)

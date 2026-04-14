@@ -5,6 +5,7 @@ tags: ["startups", "writing"]
 excerpt: "But for what purpose?"
 slug: "toil-we-must"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/toil-we-must"
 ---
 
 ![Source:Midjourney Beta](/images/toil-we-must-54db14ef.png)

@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "Just as Reflective as Reactive"
 slug: "my-style-of-panic-writing"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/my-style-of-panic-writing"
 ---
 
 ![Header image for My Style of Panic Writing](/images/my-style-of-panic-writing-ef4a2e3c.jpg)

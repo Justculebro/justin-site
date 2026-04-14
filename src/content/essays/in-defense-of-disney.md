@@ -5,6 +5,7 @@ tags: ["culture", "defense"]
 excerpt: "Imagineering: A Prototype For Imagination"
 slug: "in-defense-of-disney"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/in-defense-of-disney"
 ---
 
 ![Header image for In Defense of Disney](/images/in-defense-of-disney-5b2dc66f.png)

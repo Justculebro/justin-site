@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "Process, People, and Playbooks"
 slug: "the-professionalization-of-startups"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-professionalization-of-startups"
 ---
 
 ![Header image for The Professionalization of Startups](/images/the-professionalization-of-startups-a9caa02b.png)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Weaving Together Your Understanding of the Universe"
 slug: "a-latticework-of-knowledge"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/a-latticework-of-knowledge"
 ---
 
 ![Header image for A Latticework of Knowledge](/images/a-latticework-of-knowledge-f164bbbb.png)

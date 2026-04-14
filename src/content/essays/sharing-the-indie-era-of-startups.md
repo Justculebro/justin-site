@@ -5,6 +5,7 @@ tags: ["startups"]
 excerpt: "Featuring Bryce Roberts"
 slug: "sharing-the-indie-era-of-startups"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/sharing-the-indie-era-of-startups"
 ---
 
 ![Header image for Sharing The Indie Era of Startups](/images/sharing-the-indie-era-of-startups-f582444a.webp)

@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "A Contrary Research Event"
 slug: "building-customer-love"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/building-customer-love"
 ---
 
 ![Header image for Building Customer Love](/images/building-customer-love-d632be13.jpg)

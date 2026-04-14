@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Sound of Silence"
 slug: "long-enough-to-matter"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/long-enough-to-matter"
 ---
 
 ![Header image for Long Enough To Matter](/images/long-enough-to-matter-581e94de.png)

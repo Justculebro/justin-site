@@ -5,6 +5,7 @@ tags: ["startups", "investing"]
 excerpt: "Pushing Back Against The Loudest Models in Venture Capital"
 slug: "building-mighty-small-businesses"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/building-mighty-small-businesses"
 ---
 
 ![Header image for Building Mighty Small Businesses](/images/building-mighty-small-businesses-c9f639d1.png)

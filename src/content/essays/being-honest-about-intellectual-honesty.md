@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Hard Truth About Soft Truths"
 slug: "being-honest-about-intellectual-honesty"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/being-honest-about-intellectual-honesty"
 ---
 
 ![The battle between intellectual honesty and dishonesty in meme form](/images/being-honest-about-intellectual-honesty-f3f5bbf9.png)

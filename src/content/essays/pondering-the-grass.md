@@ -5,6 +5,7 @@ tags: ["personal", "writing"]
 excerpt: "Reframing & Reflecting"
 slug: "pondering-the-grass"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/pondering-the-grass"
 ---
 
 ![Header image for Pondering The Grass](/images/pondering-the-grass-d1cc265f.jpg)

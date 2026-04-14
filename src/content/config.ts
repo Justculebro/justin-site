@@ -9,6 +9,7 @@ const essays = defineCollection({
     excerpt: z.string().optional(),
     slug: z.string().optional(),
     type: z.string().optional(),
+    substack_url: z.string().optional(),
   }),
 });
 

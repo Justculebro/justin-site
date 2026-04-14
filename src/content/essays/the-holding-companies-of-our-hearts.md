@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "Capital Allocation That a VC Could Never"
 slug: "the-holding-companies-of-our-hearts"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-holding-companies-of-our-hearts"
 ---
 
 ![Header image for The Holding Companies of Our Hearts](/images/the-holding-companies-of-our-hearts-4e1e981f.png)

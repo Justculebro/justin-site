@@ -5,6 +5,7 @@ tags: ["career"]
 excerpt: ""
 slug: "talent-vortex"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/talent-vortex"
 ---
 
 ![Header image for The Talent Vortex: Mafias and Magnets](/images/talent-vortex-61073055.png)

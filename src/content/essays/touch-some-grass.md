@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "The What Is Never As Important As The Why"
 slug: "touch-some-grass"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/touch-some-grass"
 ---
 
 ![Header image for Touch Some Grass](/images/touch-some-grass-e041f85c.png)

@@ -5,6 +5,7 @@ tags: ["markets", "venture-capital"]
 excerpt: "Fool Me Once? Shame On Me. Fool Me Twice? I'll Lead Your Round"
 slug: "the-hype-cycles-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-hype-cycles-of-venture-capital"
 ---
 
 ![Header image for The Hype Cycles of Venture Capital](/images/the-hype-cycles-of-venture-capital-eda819f2.png)

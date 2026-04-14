@@ -5,6 +5,7 @@ tags: ["spotlight", "investing"]
 excerpt: ""
 slug: "thegp"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/thegp"
 ---
 
 ![Header image for Renegade Spotlight: The General Partnership](/images/thegp-b58dfe51.png)

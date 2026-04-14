@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "The Great Founder Sifter"
 slug: "clarity-of-thought"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/clarity-of-thought"
 ---
 
 ![Header image for Clarity of Thought](/images/clarity-of-thought-1338f4fe.png)

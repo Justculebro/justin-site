@@ -5,6 +5,7 @@ tags: ["startups", "markets"]
 excerpt: "An Idea I Return To Again And Again"
 slug: "revisiting-a-tale-of-two-markets"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/revisiting-a-tale-of-two-markets"
 ---
 
 ![Header image for Revisiting A Tale of Two Markets](/images/revisiting-a-tale-of-two-markets-37e86aa3.png)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "My Figma Surprise"
 slug: "the-reality-of-unrealistic-outliers"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-reality-of-unrealistic-outliers"
 ---
 
 ![Watching a rocket ship will never get old.](/images/the-reality-of-unrealistic-outliers-a6951e8f.jpg)

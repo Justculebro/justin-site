@@ -5,6 +5,7 @@ tags: ["writing"]
 excerpt: "\"If you don't keep your feet, there's no knowing where you might be swept off to.”"
 slug: "guide-you-gaze"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/guide-you-gaze"
 ---
 
 ![Header image for Guide Your Gaze](/images/guide-you-gaze-b9141cc1.jpg)

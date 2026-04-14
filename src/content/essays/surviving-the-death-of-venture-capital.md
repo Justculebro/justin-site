@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "\"Don't Euthanize Me\""
 slug: "surviving-the-death-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/surviving-the-death-of-venture-capital"
 ---
 
 ![Header image for Surviving The Death of Venture Capital](/images/surviving-the-death-of-venture-capital-a7fa0c45.png)

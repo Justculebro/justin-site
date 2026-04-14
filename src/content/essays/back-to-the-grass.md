@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "Getting Off The Grid"
 slug: "back-to-the-grass"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/back-to-the-grass"
 ---
 
 ![Header image for Back To The Grass](/images/back-to-the-grass-43742af9.jpg)

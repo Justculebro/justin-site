@@ -5,6 +5,7 @@ tags: ["career", "investing"]
 excerpt: "Transparency in Talent Data"
 slug: "compensation-conversations"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/compensation-conversations"
 ---
 
 ![Header image for Compensation Conversations](/images/compensation-conversations-6348256c.png)

@@ -5,6 +5,7 @@ tags: ["culture", "career"]
 excerpt: "Storytelling, Chief Evangelists, and World Building on Vibes"
 slug: "cultivating-cults"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/cultivating-cults"
 ---
 
 *Note: I was so excited about this piece last week that I [postponed publishing](https://investing1012dot0.substack.com/p/guide-you-gaze) it until I had more time. Well, I guess I had more time because I accidentally ran away with it and wrote 10,000 words on the subject. And changed the title. My apologies. This is a long piece. The longest one I’ve ever written on this blog.*

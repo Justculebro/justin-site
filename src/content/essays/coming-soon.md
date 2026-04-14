@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: ""
 slug: "coming-soon"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/coming-soon"
 ---
 
 ### Learning In Public

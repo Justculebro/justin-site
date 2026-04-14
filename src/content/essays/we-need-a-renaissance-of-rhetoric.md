@@ -5,6 +5,7 @@ tags: ["writing", "culture"]
 excerpt: "Our arguments suck. Nothing is convincing for any of the right reasons."
 slug: "we-need-a-renaissance-of-rhetoric"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/we-need-a-renaissance-of-rhetoric"
 ---
 
 ![Norman Rockwell’s Four Freedoms](/images/we-need-a-renaissance-of-rhetoric-6c665517.png)

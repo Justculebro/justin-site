@@ -5,6 +5,7 @@ tags: ["podcast"]
 excerpt: "How VCs Are Picking Their Bets"
 slug: "the-horse-the-jockey-or-the-whole"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/the-horse-the-jockey-or-the-whole"
 ---
 
 ![Header image for The Horse, The Jockey, or The Whole Race?](/images/the-horse-the-jockey-or-the-whole-04c5eacf.png)

@@ -5,6 +5,7 @@ tags: ["investing", "startups"]
 excerpt: "Consolidation Is Upon Us"
 slug: "revisiting-the-age-of-acquisition"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/revisiting-the-age-of-acquisition"
 ---
 
 ![Header image for Revisiting The Age of Acquisition](/images/revisiting-the-age-of-acquisition-de8bcf62.png)

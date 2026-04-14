@@ -5,6 +5,7 @@ tags: ["investing", "culture"]
 excerpt: "Dependencies & Failure Points"
 slug: "controlling-your-own-destiny"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/controlling-your-own-destiny"
 ---
 
 ![Header image for Controlling Your Own Destiny](/images/controlling-your-own-destiny-0498618e.png)

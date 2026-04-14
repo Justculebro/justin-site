@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "Miles To Go Before We Sleep"
 slug: "the-hardening-of-the-great-softening"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-hardening-of-the-great-softening"
 ---
 
 ![Header image for The Hardening Of The Great Softening](/images/the-hardening-of-the-great-softening-bae5162b.png)

@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "An Exploration of \"How Can I Be Helpful?\""
 slug: "the-tales-of-their-usefulness-have"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-tales-of-their-usefulness-have"
 ---
 
 ![Header image for The Tales of Usefulness Have Been Greatly Exaggerated](/images/the-tales-of-their-usefulness-have-c5b048e6.png)

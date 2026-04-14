@@ -5,6 +5,7 @@ tags: ["personal"]
 excerpt: "On Stewardship"
 slug: "even-more-a-father"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/even-more-a-father"
 ---
 
 ![Header image for Even More a Father](/images/even-more-a-father-86298e35.png)

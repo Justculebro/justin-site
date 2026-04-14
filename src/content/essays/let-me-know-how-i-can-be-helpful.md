@@ -5,6 +5,7 @@ tags: ["investing"]
 excerpt: "The Memeification of Venture Capital"
 slug: "let-me-know-how-i-can-be-helpful"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/let-me-know-how-i-can-be-helpful"
 ---
 
 ![Header image for Let Me Know How I Can Be Helpful](/images/let-me-know-how-i-can-be-helpful-77c5a052.png)

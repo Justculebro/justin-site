@@ -5,6 +5,7 @@ tags: ["podcast", "startups"]
 excerpt: "Exploring Not Just WHAT Happened, But WHY"
 slug: "building-informational-leverage-with"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/building-informational-leverage-with"
 ---
 
 **This week, I got to sit down with Evan Armstrong about the [launch](https://x.com/itsurboyevan/status/1914695868441075865) of his new publication, [The Leverage](https://www.gettheleverage.com/). First edition goes out tomorrow, so be sure to subscribe!**

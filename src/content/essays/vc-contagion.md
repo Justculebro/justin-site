@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "Is Venture Capital Killing Itself?"
 slug: "vc-contagion"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/vc-contagion"
 ---
 
 *This piece [originally appeared as a guest post](https://www.newcomer.co/p/guest-essay-vc-contagion) in Newcomer. You can also [check out this podcast episode](https://www.youtube.com/watch?v=f9v01qT-uaE) where Eric Newcomer and I go deeper into some of the themes I touch on in the piece.*

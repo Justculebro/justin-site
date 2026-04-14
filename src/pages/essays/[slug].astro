@@ -48,8 +48,27 @@ const jsonLd = {
     <span style="font-size: 12px; color: var(--text-tertiary); margin-left: 8px;">{new Date(essay.data.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
   </div>
   <h1 class="page-title">{essay.data.title}</h1>
+  {essay.data.substack_url && (
+    <div class="originally-published">
+      Originally published on <a href={essay.data.substack_url} target="_blank" rel="noopener noreferrer">Investing 101</a>
+    </div>
+  )}
   <div class="section-divider" style="margin-top: 24px;"></div>
   <div class="prose">
     <Content />
   </div>
 </BaseLayout>
+
+<style>
+  .originally-published {
+    font-size: 12.5px;
+    color: var(--text-tertiary);
+    margin-top: 6px;
+  }
+  .originally-published a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .originally-published a:hover { text-decoration-color: var(--accent); }
+</style>

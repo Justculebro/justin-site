@@ -5,6 +5,7 @@ tags: ["investing", "personal"]
 excerpt: "You Are What You Think About"
 slug: "crafting-your-average"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/crafting-your-average"
 ---
 
 *I'll be covering a bunch of topics [you all voted on](https://investing1012dot0.substack.com/p/long-enough-to-matter) in the coming weeks, from Books 2.0 to Tastemakers to The Death of ESG. But, as is so often my modus operandi, I can't help but write each week about what is most on my mind. So, in the words of mouthy 16-year old Kyle when he's talking to his Mom about cleaning his room, "I'll get to it when I get to it."*

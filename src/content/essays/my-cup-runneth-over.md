@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Indexing Your Beliefs Before They Get Drowned Out"
 slug: "my-cup-runneth-over"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/my-cup-runneth-over"
 ---
 
 ![Header image for My Cup Runneth Over](/images/my-cup-runneth-over-4551dec5.png)

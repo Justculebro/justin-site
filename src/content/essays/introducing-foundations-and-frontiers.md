@@ -5,6 +5,7 @@ tags: ["essay"]
 excerpt: "Defining What It Means To Be a Research-Driven Venture Firm"
 slug: "introducing-foundations-and-frontiers"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/introducing-foundations-and-frontiers"
 ---
 
 ![Header image for Foundations & Frontiers](/images/introducing-foundations-and-frontiers-896c800b.jpg)

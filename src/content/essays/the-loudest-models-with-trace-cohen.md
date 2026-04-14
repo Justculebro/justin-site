@@ -5,6 +5,7 @@ tags: ["podcast"]
 excerpt: "How The Venture Ecosystem Gets Pulled Towards The Loudest Actors"
 slug: "the-loudest-models-with-trace-cohen"
 type: "podcast"
+substack_url: "https://investing101.substack.com/p/the-loudest-models-with-trace-cohen"
 ---
 
 ![Header image for The Loudest Models (with Trace Cohen)](/images/the-loudest-models-with-trace-cohen-cc0ca593.png)

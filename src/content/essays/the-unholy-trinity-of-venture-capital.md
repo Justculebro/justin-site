@@ -5,6 +5,7 @@ tags: ["venture-capital", "investing"]
 excerpt: "Allocators, Agglomerators, and Absorbers"
 slug: "the-unholy-trinity-of-venture-capital"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/the-unholy-trinity-of-venture-capital"
 ---
 
 ![Header image for The Unholy Trinity of Venture Capital](/images/the-unholy-trinity-of-venture-capital-a6677a69.png)

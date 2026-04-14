@@ -5,6 +5,7 @@ tags: ["investing", "career"]
 excerpt: "The Great Founder Sifter"
 slug: "revisiting-clarity-of-thought"
 type: "newsletter"
+substack_url: "https://investing101.substack.com/p/revisiting-clarity-of-thought"
 ---
 
 ![Boy Jesus in the Temple (Christ in the Temple) by Heinrich Hofman](/images/revisiting-clarity-of-thought-9232aff7.jpg)
