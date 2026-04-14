@@ -1,10 +1,15 @@
 ---
 // SearchBar.astro — universal full-text search across books + essays
+// Pass context="bookshelf"|"essays"|"home" to control result ordering
+interface Props {
+  context?: 'bookshelf' | 'essays' | 'home';
+}
+const { context = 'home' } = Astro.props;
 ---
 
-<div class="search-wrapper" id="search-wrapper">
+<div class="search-wrapper" id="search-wrapper" data-context={context}>
   <div class="search-input-row">
-    <span class="search-icon">⌕</span>
+    <svg class="search-icon" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.5" y1="12.5" x2="18" y2="18"/></svg>
     <input
       type="text"
       class="search-input"
@@ -12,7 +17,7 @@
       placeholder="Search books, highlights, and essays..."
       autocomplete="off"
     />
-    <span class="search-shortcut" id="search-shortcut">/</span>
+    <kbd class="search-shortcut" id="search-shortcut">/</kbd>
   </div>
   <div class="search-dropdown" id="search-dropdown" style="display:none;"></div>
 </div>
@@ -25,8 +30,8 @@
   const dropdown = document.getElementById('search-dropdown');
   const wrapper = document.getElementById('search-wrapper');
   const shortcut = document.getElementById('search-shortcut');
+  const context = wrapper.dataset.context || 'home';
 
-  // Keyboard shortcut: "/" focuses the search bar
   document.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement !== input && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName || '')) {
       e.preventDefault();
@@ -38,7 +43,6 @@
     }
   });
 
-  // Hide shortcut hint when focused
   input.addEventListener('focus', () => { shortcut.style.display = 'none'; });
   input.addEventListener('blur', () => {
     if (!input.value) shortcut.style.display = '';
@@ -57,22 +61,27 @@
     return index;
   }
 
-  function escapeHtml(s) {
+  function esc(s) {
     return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
-  function highlightMatch(text, query) {
-    const lower = text.toLowerCase();
+  function highlightAll(text, query) {
     const qLower = query.toLowerCase();
-    const idx = lower.indexOf(qLower);
-    if (idx === -1) return escapeHtml(text);
-    return escapeHtml(text.slice(0, idx)) +
-      '<mark>' + escapeHtml(text.slice(idx, idx + query.length)) + '</mark>' +
-      escapeHtml(text.slice(idx + query.length));
+    let result = '';
+    let i = 0;
+    const lower = text.toLowerCase();
+    while (i < text.length) {
+      const idx = lower.indexOf(qLower, i);
+      if (idx === -1) { result += esc(text.slice(i)); break; }
+      result += esc(text.slice(i, idx));
+      result += '<mark>' + esc(text.slice(idx, idx + query.length)) + '</mark>';
+      i = idx + query.length;
+    }
+    return result;
   }
 
   function extractSnippet(text, query, contextLen) {
-    contextLen = contextLen || 100;
+    contextLen = contextLen || 90;
     const lower = text.toLowerCase();
     const qLower = query.toLowerCase();
     const idx = lower.indexOf(qLower);
@@ -80,9 +89,60 @@
     const start = Math.max(0, idx - contextLen);
     const end = Math.min(text.length, idx + query.length + contextLen);
     let snippet = text.slice(start, end);
-    if (start > 0) snippet = '...' + snippet;
-    if (end < text.length) snippet = snippet + '...';
-    return highlightMatch(snippet, query);
+    if (start > 0) snippet = '\u2026' + snippet;
+    if (end < text.length) snippet = snippet + '\u2026';
+    return highlightAll(snippet, query);
+  }
+
+  function renderBookGroup(bookResults, query) {
+    if (!bookResults.length) return '';
+    let html = '<div class="sg">';
+    html += '<div class="sg-label"><span class="sg-icon">▤</span> Books</div>';
+    for (const b of bookResults) {
+      html += '<a class="sr-item" href="/books/' + b.slug + '">';
+      html += '<div class="sr-head">';
+      html += '<div class="sr-title">' + highlightAll(b.title, query) + '</div>';
+      html += '<div class="sr-meta">' + esc(b.author) + (b.year ? ' \u00b7 ' + esc(b.year) : '') + '</div>';
+      html += '</div>';
+      if (b.matchedHighlights.length) {
+        html += '<div class="sr-quotes">';
+        for (const h of b.matchedHighlights.slice(0, 2)) {
+          html += '<div class="sr-quote">' + extractSnippet(h, query, 70) + '</div>';
+        }
+        if (b.matchedHighlights.length > 2) {
+          html += '<div class="sr-more">+' + (b.matchedHighlights.length - 2) + ' more highlights \u2192</div>';
+        }
+        html += '</div>';
+      }
+      html += '</a>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function renderEssayGroup(essayResults, query) {
+    if (!essayResults.length) return '';
+    let html = '<div class="sg">';
+    html += '<div class="sg-label"><span class="sg-icon">\u270e</span> Essays</div>';
+    for (const e of essayResults) {
+      html += '<a class="sr-item" href="/essays/' + e.slug + '">';
+      html += '<div class="sr-head">';
+      html += '<div class="sr-title">' + highlightAll(e.title, query) + '</div>';
+      if (e.date) {
+        try { html += '<div class="sr-meta">' + new Date(e.date).toLocaleDateString('en-US', {year:'numeric', month:'short'}) + '</div>'; } catch(_) {}
+      }
+      html += '</div>';
+      if (e.bodySnippets.length) {
+        html += '<div class="sr-quotes">';
+        for (const s of e.bodySnippets.slice(0, 2)) {
+          html += '<div class="sr-quote">' + s + '</div>';
+        }
+        html += '</div>';
+      }
+      html += '</a>';
+    }
+    html += '</div>';
+    return html;
   }
 
   async function runSearch(query) {
@@ -94,7 +154,6 @@
     const bookResults = [];
     const essayResults = [];
 
-    // Search books
     for (const book of data.books) {
       const titleMatch = book.title.toLowerCase().includes(qLower);
       const authorMatch = book.author.toLowerCase().includes(qLower);
@@ -102,67 +161,51 @@
       if (titleMatch || authorMatch || matchedHighlights.length > 0) {
         bookResults.push({ ...book, titleMatch, authorMatch, matchedHighlights });
       }
-      if (bookResults.length >= 5) break;
+      if (bookResults.length >= 8) break;
     }
 
-    // Search essays
     for (const essay of data.essays) {
       const titleMatch = essay.title.toLowerCase().includes(qLower);
       const bodySnippets = [];
       if (essay.body.toLowerCase().includes(qLower)) {
-        // Extract up to 3 snippets
         const lower = essay.body.toLowerCase();
         let searchFrom = 0;
         while (bodySnippets.length < 3) {
           const idx = lower.indexOf(qLower, searchFrom);
           if (idx === -1) break;
-          bodySnippets.push(extractSnippet(essay.body, query, 80));
-          searchFrom = idx + qLower.length + 100;
+          const start = Math.max(0, idx - 90);
+          const end = Math.min(essay.body.length, idx + qLower.length + 90);
+          let snippet = essay.body.slice(start, end);
+          if (start > 0) snippet = '\u2026' + snippet;
+          if (end < essay.body.length) snippet = snippet + '\u2026';
+          bodySnippets.push(highlightAll(snippet, query));
+          searchFrom = idx + qLower.length + 150;
         }
       }
       if (titleMatch || bodySnippets.length > 0) {
         essayResults.push({ ...essay, titleMatch, bodySnippets });
       }
-      if (essayResults.length >= 5) break;
+      if (essayResults.length >= 8) break;
     }
 
     if (bookResults.length === 0 && essayResults.length === 0) {
-      dropdown.innerHTML = '<div class="search-empty">No results for "' + escapeHtml(query) + '"</div>';
+      dropdown.innerHTML = '<div class="search-empty">No results for \u201c' + esc(query) + '\u201d</div>';
       dropdown.style.display = 'block';
       return;
     }
 
+    // Order groups based on page context
     let html = '';
-
-    if (bookResults.length > 0) {
-      html += '<div class="search-group-label">Books</div>';
-      for (const b of bookResults) {
-        html += '<a class="search-result" href="/books/' + b.slug + '">';
-        html += '<div class="search-result-title">' + highlightMatch(b.title, query) + '</div>';
-        html += '<div class="search-result-meta">' + escapeHtml(b.author) + (b.year ? ' · ' + escapeHtml(b.year) : '') + '</div>';
-        const snippets = b.matchedHighlights.slice(0, 3);
-        for (const h of snippets) {
-          html += '<div class="search-snippet">' + extractSnippet(h, query, 80) + '</div>';
-        }
-        html += '</a>';
-      }
-    }
-
-    if (essayResults.length > 0) {
-      html += '<div class="search-group-label">Essays</div>';
-      for (const e of essayResults) {
-        html += '<a class="search-result" href="/essays/' + e.slug + '">';
-        html += '<div class="search-result-title">' + highlightMatch(e.title, query) + '</div>';
-        if (e.date) {
-          try {
-            html += '<div class="search-result-meta">' + new Date(e.date).toLocaleDateString('en-US', { year:'numeric', month:'short' }) + '</div>';
-          } catch(_) {}
-        }
-        for (const s of e.bodySnippets.slice(0, 2)) {
-          html += '<div class="search-snippet">' + s + '</div>';
-        }
-        html += '</a>';
-      }
+    if (context === 'bookshelf') {
+      html += renderBookGroup(bookResults, query);
+      html += renderEssayGroup(essayResults, query);
+    } else if (context === 'essays') {
+      html += renderEssayGroup(essayResults, query);
+      html += renderBookGroup(bookResults, query);
+    } else {
+      // home: essays first, then books
+      html += renderEssayGroup(essayResults, query);
+      html += renderBookGroup(bookResults, query);
     }
 
     dropdown.innerHTML = html;
@@ -183,101 +226,88 @@
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 10px 14px;
+    gap: 10px;
     transition: border-color 0.15s ease;
   }
-  .search-input-row:focus-within {
-    border-color: var(--accent);
-  }
-  .search-icon {
-    color: var(--text-tertiary);
-    font-size: 16px;
-    margin-right: 10px;
-    flex-shrink: 0;
-  }
+  .search-input-row:focus-within { border-color: var(--accent); }
+  .search-icon { color: var(--text-tertiary); flex-shrink: 0; }
   .search-input {
-    flex: 1;
-    border: none;
-    background: none;
-    outline: none;
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--text);
-    min-width: 0;
+    flex: 1; border: none; background: none; outline: none;
+    font-family: var(--font-body); font-size: 14px; color: var(--text); min-width: 0;
   }
   .search-input::placeholder { color: var(--text-tertiary); }
   .search-shortcut {
-    background: var(--tag-bg);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1px 7px;
-    font-size: 12px;
-    font-family: var(--font-mono);
-    color: var(--text-tertiary);
-    flex-shrink: 0;
+    background: var(--tag-bg); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1px 7px; font-size: 11px; font-family: var(--font-mono); color: var(--text-tertiary); flex-shrink: 0;
   }
 
+  /* --- Dropdown --- */
   .search-dropdown {
-    position: absolute;
-    top: calc(100% + 6px);
-    left: 0;
-    right: 0;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
+    position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-    max-height: 480px;
-    overflow-y: auto;
-    z-index: 100;
-    padding: 8px;
+    max-height: 520px; overflow-y: auto; z-index: 100; padding: 6px;
   }
-  .search-group-label {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-tertiary);
-    padding: 8px 10px 4px;
-    font-weight: 600;
+
+  /* --- Section group (Books / Essays) --- */
+  .search-dropdown :global(.sg) {
+    padding: 2px 0;
   }
-  .search-result {
-    display: block;
-    text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 8px;
+  .search-dropdown :global(.sg + .sg) {
+    border-top: 1px solid var(--border);
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+  .search-dropdown :global(.sg-label) {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--accent); font-weight: 700;
+    padding: 8px 12px 4px; display: flex; align-items: center; gap: 6px;
+  }
+  .search-dropdown :global(.sg-icon) { font-size: 11px; }
+
+  /* --- Individual result item --- */
+  .search-dropdown :global(.sr-item) {
+    display: block; text-decoration: none;
+    padding: 8px 12px; border-radius: 8px;
     transition: background 0.1s ease;
     cursor: pointer;
   }
-  .search-result:hover {
-    background: var(--tag-bg);
+  .search-dropdown :global(.sr-item:hover) { background: var(--tag-bg); }
+  .search-dropdown :global(.sr-item + .sr-item) {
+    border-top: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
   }
-  .search-result-title {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text);
-    line-height: 1.3;
+
+  /* Title + meta block */
+  .search-dropdown :global(.sr-head) {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
   }
-  .search-result-meta {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    margin-top: 2px;
+  .search-dropdown :global(.sr-title) {
+    font-size: 13.5px; font-weight: 600; color: var(--text); line-height: 1.3;
   }
-  .search-snippet {
-    font-size: 12px;
-    color: var(--text-secondary);
-    line-height: 1.5;
-    margin-top: 4px;
-    padding-left: 8px;
+  .search-dropdown :global(.sr-meta) {
+    font-size: 11px; color: var(--text-tertiary); white-space: nowrap;
+  }
+
+  /* Quote / snippet block — indented under the title */
+  .search-dropdown :global(.sr-quotes) {
+    margin: 5px 0 2px 0; padding-left: 12px;
     border-left: 2px solid var(--border);
+    display: flex; flex-direction: column; gap: 3px;
   }
-  .search-snippet :global(mark) {
-    background: rgba(165, 63, 54, 0.15);
-    color: var(--accent);
-    padding: 1px 2px;
-    border-radius: 2px;
+  .search-dropdown :global(.sr-quote) {
+    font-size: 12px; color: var(--text-secondary); line-height: 1.5;
   }
+  .search-dropdown :global(.sr-more) {
+    font-size: 11px; color: var(--accent); font-weight: 500; margin-top: 1px;
+  }
+
+  /* Match highlights */
+  .search-dropdown :global(mark) {
+    background: rgba(165, 63, 54, 0.15); color: var(--accent);
+    padding: 1px 2px; border-radius: 2px; font-weight: 600;
+  }
+
   .search-empty {
-    padding: 24px 16px;
-    text-align: center;
-    color: var(--text-tertiary);
-    font-size: 13px;
+    padding: 24px 16px; text-align: center; color: var(--text-tertiary); font-size: 13px;
   }
 </style>

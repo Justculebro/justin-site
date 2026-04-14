@@ -37,7 +37,7 @@ const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
     {totalBooks} books across {yearsWithBooks.length} years. The <span style="color: var(--accent); font-weight: 600;">quake books</span> are the ones that changed how I think.
   </p>
 
-  <SearchBar />
+  <SearchBar context="bookshelf" />
 
   <div class="bookshelf-tabs">
     <button class="bookshelf-tab active" data-view="quake">Quake Books</button>

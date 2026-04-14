@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchBar from '../components/SearchBar.astro';
 import featured from '../data/featured.json';
 import ideasData from '../data/portfolio-ideas.json';
 import { getCollection } from 'astro:content';
@@ -54,6 +55,8 @@ const pools = {
     General Partner @ <a href="https://contrary.com/" target="_blank" rel="noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 2px;">Contrary</a>. Founder @ <a href="https://research.contrary.com/" target="_blank" rel="noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 2px;">Contrary Research</a>. Father of 4.
     Member of The Church of Jesus Christ of Latter-Day Saints.
   </p>
+
+  <SearchBar context="home" />
 
   <div class="epigraph-carousel" id="epigraph-carousel">
     <div class="epigraph active">
