@@ -1,33 +1,10 @@
 {
   "quake_books": [
     {
-      "title": "Leap of Faith",
-      "author": "Bob Bennett",
-      "cover": "/images/books/leap of faith.jpeg",
-      "year_read": 2018,
-      "tags": [
-        "religious-intellectualism",
-        "ideological-family-tree"
-      ]
-    },
-    {
-      "title": "John Quincy Adams",
-      "author": "James Traub",
-      "cover": "/images/books/john quincy adams.jpeg",
-      "year_read": 2019,
-      "tags": [
-        "historical-futurism",
-        "language-of-discourse"
-      ]
-    },
-    {
-      "title": "Red Rising",
-      "author": "Pierce Brown",
-      "cover": "/images/books/red-rising.jpeg",
-      "year_read": 2019,
-      "tags": [
-        "historical-futurism"
-      ]
+      "title": "Forbidden Mountain",
+      "author": "Brandon Mull",
+      "year_read": 2024,
+      "tags": []
     },
     {
       "title": "Poor Charlie's Almanack",
