@@ -1,6 +1,6 @@
 # kwharrison13.com
 
-Personal site for Kyle Harrison. Built with [Astro](https://astro.build), deployed to [Vercel](https://vercel.com).
+Personal site for Justin Culebro. Built with [Astro](https://astro.build), deployed to [Vercel](https://vercel.com).
 
 Inspired by [sj.land](https://sj.land) — a productivity-app-style personal site with sidebar navigation, keyboard shortcuts, and instant page switching.
 

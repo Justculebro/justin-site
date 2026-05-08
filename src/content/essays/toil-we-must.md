@@ -68,7 +68,7 @@ I'm serious, [read the quote tweets](https://twitter.com/oven_sh/status/15622481
 
 This really hit a nerve for a lot of people. And there is an entire socio-economic web to unravel here around distrust in institutions, income inequality, mental health, and labor expectations. I'm not qualified to address pretty much any of that.
 
-But I can't deny that this is an important issue. And it's not enough to brush it under the rug saying "I don't understand why this is so controversial." For me, as Kyle Harrison, I'm trying to strike the balance between (1) I don't think this company did anything wrong; building a startup **IS** a grind. But (2) I do understand why this is a trigger for some people. People who have worked hard and felt unseen, unappreciated, and taken advantage of.
+But I can't deny that this is an important issue. And it's not enough to brush it under the rug saying "I don't understand why this is so controversial." For me, as Justin Culebro, I'm trying to strike the balance between (1) I don't think this company did anything wrong; building a startup **IS** a grind. But (2) I do understand why this is a trigger for some people. People who have worked hard and felt unseen, unappreciated, and taken advantage of.
 
 For anyone building a company, hiring people, or funding companies that will then hire people: **this is an important discussion for you to pay attention to.**
 

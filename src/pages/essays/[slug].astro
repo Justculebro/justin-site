@@ -20,12 +20,12 @@ const jsonLd = {
   "datePublished": essay.data.date,
   "author": {
     "@type": "Person",
-    "name": "Kyle Harrison",
+    "name": "Justin Culebro",
     "url": "https://kwharrison13.com/about"
   },
   "publisher": {
     "@type": "Person",
-    "name": "Kyle Harrison"
+    "name": "Justin Culebro"
   },
   "description": essay.data.excerpt || "",
   "mainEntityOfPage": {
@@ -38,7 +38,7 @@ const jsonLd = {
 <BaseLayout
   title={essay.data.title}
   currentPage="essays"
-  description={essay.data.excerpt || `Essay by Kyle Harrison: ${essay.data.title}`}
+  description={essay.data.excerpt || `Essay by Justin Culebro: ${essay.data.title}`}
   ogType="article"
   article={{ publishedTime: essay.data.date, tags: essay.data.tags }}
 >

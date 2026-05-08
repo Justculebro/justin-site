@@ -31,7 +31,7 @@ const totalBooks = Object.values(library).reduce((sum, books) => sum + books.len
 const yearsWithBooks = yearKeys.filter(y => library[y].length > 0);
 ---
 
-<BaseLayout title="Bookshelf" currentPage="bookshelf" description="Kyle Harrison's reading list — books that have shaped his thinking on venture capital, technology, history, and human potential.">
+<BaseLayout title="Bookshelf" currentPage="bookshelf" description="Justin Culebro's reading list — books that have shaped his thinking on venture capital, technology, history, and human potential.">
   <h1 class="page-title">Bookshelf</h1>
   <p class="page-subtitle">
     {totalBooks} books across {yearsWithBooks.length} years. The <span style="color: var(--accent); font-weight: 600;">quake books</span> are the ones that changed how I think.

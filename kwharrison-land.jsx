@@ -1,40 +1,40 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+﻿import { useState, useEffect, useCallback, useRef } from "react";
 
-// ─── Theme & Data ────────────────────────────────────────────────
+// â”€â”€â”€ Theme & Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const THEMES = { light: "light", dark: "dark", auto: "auto" };
 
 const NAV_SECTIONS = [
   {
     group: null,
     items: [
-      { id: "home", label: "Home", icon: "◉", key: "1" },
-      { id: "about", label: "About", icon: "⊕", key: "2" },
-      { id: "essays", label: "Essays", icon: "✎", key: "3" },
-      { id: "portfolio", label: "Portfolio Ideas", icon: "◈", key: "4" },
-      { id: "bookshelf", label: "Bookshelf", icon: "▤", key: "5" },
+      { id: "home", label: "Home", icon: "â—‰", key: "1" },
+      { id: "about", label: "About", icon: "âŠ•", key: "2" },
+      { id: "essays", label: "Essays", icon: "âœŽ", key: "3" },
+      { id: "portfolio", label: "Portfolio Ideas", icon: "â—ˆ", key: "4" },
+      { id: "bookshelf", label: "Bookshelf", icon: "â–¤", key: "5" },
     ],
   },
   {
     group: "Resources",
     items: [
-      { id: "music", label: "Music", icon: "♫", key: "6" },
-      { id: "videos", label: "Videos", icon: "▶", key: "7" },
-      { id: "podcasts", label: "Podcasts", icon: "◉", key: "8" },
-      { id: "learning", label: "Learning", icon: "∞", key: "9" },
+      { id: "music", label: "Music", icon: "â™«", key: "6" },
+      { id: "videos", label: "Videos", icon: "â–¶", key: "7" },
+      { id: "podcasts", label: "Podcasts", icon: "â—‰", key: "8" },
+      { id: "learning", label: "Learning", icon: "âˆž", key: "9" },
     ],
   },
   {
     group: "Stay in touch",
     items: [
-      { id: "contact", label: "Contact", icon: "✉", key: "/" },
+      { id: "contact", label: "Contact", icon: "âœ‰", key: "/" },
     ],
   },
 ];
 
 const EXTERNAL_LINKS = [
-  { label: "Newsletter", icon: "↗", url: "https://investing1012dot0.substack.com/" },
-  { label: "Twitter", icon: "↗", url: "https://twitter.com/kwharrison13" },
-  { label: "LinkedIn", icon: "↗", url: "https://www.linkedin.com/in/kyle-harrison-9274b278/" },
+  { label: "Newsletter", icon: "â†—", url: "https://investing1012dot0.substack.com/" },
+  { label: "Twitter", icon: "â†—", url: "https://twitter.com/kwharrison13" },
+  { label: "LinkedIn", icon: "â†—", url: "https://www.linkedin.com/in/kyle-harrison-9274b278/" },
 ];
 
 const ESSAYS = [
@@ -60,7 +60,7 @@ const BOOKS = [
   { title: "Leap of Faith", author: "Bob Bennett" },
 ];
 
-// ─── Styles ──────────────────────────────────────────────────────
+// â”€â”€â”€ Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const css = `
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -121,7 +121,7 @@ body, #root {
   overflow: hidden;
 }
 
-/* ─── Sidebar ────────────────────────────── */
+/* â”€â”€â”€ Sidebar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .sidebar {
   width: 240px;
   min-width: 240px;
@@ -280,7 +280,7 @@ body, #root {
   box-shadow: var(--shadow-sm);
 }
 
-/* ─── Main Content ───────────────────────── */
+/* â”€â”€â”€ Main Content â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .main-content {
   flex: 1;
   overflow-y: auto;
@@ -345,7 +345,7 @@ h1.page-title em {
   margin: 12px 0 24px;
 }
 
-/* ─── Cards ──────────────────────────────── */
+/* â”€â”€â”€ Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .update-card {
   display: flex;
   gap: 16px;
@@ -543,7 +543,7 @@ h1.page-title em {
   opacity: 0.4;
 }
 
-/* ─── Contact Modal ──────────────────────── */
+/* â”€â”€â”€ Contact Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -656,7 +656,7 @@ h1.page-title em {
   background: var(--accent-hover);
 }
 
-/* ─── Responsive (sidebar collapse) ──────── */
+/* â”€â”€â”€ Responsive (sidebar collapse) â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -696,7 +696,7 @@ h1.page-title em {
 }
 `;
 
-// ─── Page Components ─────────────────────────────────────────────
+// â”€â”€â”€ Page Components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function HomePage() {
   return (
     <div className="page-enter">
@@ -710,24 +710,24 @@ function HomePage() {
 
       <div className="info-grid">
         <span className="info-label">Focus</span>
-        <span className="info-value">AI disruption of vertical software — which moats survive, and which don't.</span>
+        <span className="info-value">AI disruption of vertical software â€” which moats survive, and which don't.</span>
         <span className="info-label">Background</span>
-        <span className="info-value">Index Ventures · Coatue · TCV · Former Founder</span>
+        <span className="info-value">Index Ventures Â· Coatue Â· TCV Â· Former Founder</span>
       </div>
 
       <div style={{ marginTop: 40 }}>
-        <h2 className="section-heading">Updates <span className="dash">— recent</span></h2>
+        <h2 className="section-heading">Updates <span className="dash">â€” recent</span></h2>
         <div className="section-divider" />
         <div className="update-card">
-          <div className="update-icon">📝</div>
+          <div className="update-icon">ðŸ“</div>
           <div className="update-content">
             <div className="update-title">Hijacking The Huckster's Hypebook</div>
-            <div className="update-excerpt">An analytical essay on the repeatable fundraising playbook used by charismatic founders — from outright fraud to "righteous hucksters" who delivered real results.</div>
+            <div className="update-excerpt">An analytical essay on the repeatable fundraising playbook used by charismatic founders â€” from outright fraud to "righteous hucksters" who delivered real results.</div>
             <div className="update-meta"><span className="update-tag">Investing 101</span> In progress</div>
           </div>
         </div>
         <div className="update-card">
-          <div className="update-icon">🔬</div>
+          <div className="update-icon">ðŸ”¬</div>
           <div className="update-content">
             <div className="update-title">Contrary Research: CR100 Framework</div>
             <div className="update-excerpt">Building a systematic coverage framework focused on 100 key companies across the Contrary portfolio and pipeline.</div>
@@ -735,11 +735,11 @@ function HomePage() {
           </div>
         </div>
         <div className="update-card">
-          <div className="update-icon">🤖</div>
+          <div className="update-icon">ðŸ¤–</div>
           <div className="update-content">
             <div className="update-title">AI-Proof SaaS Scoring System</div>
             <div className="update-excerpt">Applying a framework across 74 SaaS companies to identify defensible businesses at distressed valuations in an AI-disrupted landscape.</div>
-            <div className="update-meta"><span className="update-tag">Research</span> 2024–25</div>
+            <div className="update-meta"><span className="update-tag">Research</span> 2024â€“25</div>
           </div>
         </div>
       </div>
@@ -751,17 +751,17 @@ function AboutPage() {
   return (
     <div className="page-enter">
       <h1 className="page-title">About</h1>
-      <p className="page-subtitle">Research · Capital · Ideas</p>
+      <p className="page-subtitle">Research Â· Capital Â· Ideas</p>
 
       <div className="info-grid">
         <span className="info-label">Role</span>
-        <span className="info-value">General Partner @ Contrary · Founder @ Contrary Research</span>
+        <span className="info-value">General Partner @ Contrary Â· Founder @ Contrary Research</span>
         <span className="info-label">Newsletter</span>
-        <span className="info-value"><a href="https://investing1012dot0.substack.com/" target="_blank" rel="noreferrer">Investing 101 on Substack ↗</a></span>
+        <span className="info-value"><a href="https://investing1012dot0.substack.com/" target="_blank" rel="noreferrer">Investing 101 on Substack â†—</a></span>
         <span className="info-label">Location</span>
         <span className="info-value">Portland, Oregon</span>
         <span className="info-label">Background</span>
-        <span className="info-value">Index Ventures · Coatue · TCV · Amazon · BYU · Cambridge</span>
+        <span className="info-value">Index Ventures Â· Coatue Â· TCV Â· Amazon Â· BYU Â· Cambridge</span>
       </div>
 
       <div style={{ marginTop: 32 }}>
@@ -787,7 +787,7 @@ function EssaysPage() {
       <div className="section-divider" />
       {ESSAYS.map((e, i) => (
         <div className="update-card" key={i}>
-          <div className="update-icon">✎</div>
+          <div className="update-icon">âœŽ</div>
           <div className="update-content">
             <div className="update-title">{e.title}</div>
             <div className="update-excerpt">{e.excerpt}</div>
@@ -819,7 +819,7 @@ function BookshelfPage() {
   return (
     <div className="page-enter">
       <h1 className="page-title">Bookshelf</h1>
-      <p className="page-subtitle">Quake books — the ones that shifted my thinking.</p>
+      <p className="page-subtitle">Quake books â€” the ones that shifted my thinking.</p>
       <div className="section-divider" />
       {BOOKS.map((b, i) => (
         <div className="book-item" key={i}>
@@ -852,7 +852,7 @@ function ContactModal({ onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <h2>Get in touch</h2>
-        <p className="modal-sub">Send a quick note — I'll get back to you.</p>
+        <p className="modal-sub">Send a quick note â€” I'll get back to you.</p>
         <div className="modal-field">
           <label>Name</label>
           <input type="text" placeholder="Your name" />
@@ -874,7 +874,7 @@ function ContactModal({ onClose }) {
   );
 }
 
-// ─── Main App ────────────────────────────────────────────────────
+// â”€â”€â”€ Main App â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function App() {
   const [activePage, setActivePage] = useState("home");
   const [theme, setTheme] = useState("light");
@@ -931,10 +931,10 @@ export default function App() {
       case "essays": return <EssaysPage />;
       case "portfolio": return <PortfolioPage />;
       case "bookshelf": return <BookshelfPage />;
-      case "music": return <PlaceholderPage icon="♫" title="Music" description="Playlists and albums that fuel the work." />;
-      case "videos": return <PlaceholderPage icon="▶" title="Videos" description="Talks, interviews, and visual essays." />;
-      case "podcasts": return <PlaceholderPage icon="◉" title="Podcasts" description="Favorite episodes and shows." />;
-      case "learning": return <PlaceholderPage icon="∞" title="Learning" description="Courses, frameworks, and ongoing education." />;
+      case "music": return <PlaceholderPage icon="â™«" title="Music" description="Playlists and albums that fuel the work." />;
+      case "videos": return <PlaceholderPage icon="â–¶" title="Videos" description="Talks, interviews, and visual essays." />;
+      case "podcasts": return <PlaceholderPage icon="â—‰" title="Podcasts" description="Favorite episodes and shows." />;
+      case "learning": return <PlaceholderPage icon="âˆž" title="Learning" description="Courses, frameworks, and ongoing education." />;
       default: return <HomePage />;
     }
   };
@@ -947,7 +947,7 @@ export default function App() {
         <nav className={`sidebar ${sidebarOpen ? "open" : ""}`}>
           <div className="sidebar-logo">
             <span className="logo-mark">K</span>
-            Kyle Harrison
+            Justin Culebro
           </div>
 
           {NAV_SECTIONS.map((section, si) => (
@@ -994,8 +994,8 @@ export default function App() {
         {/* Main */}
         <main className="main-content" ref={mainRef}>
           <div className="mobile-header">
-            <button className="hamburger" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</button>
-            <span style={{ fontFamily: "var(--font-display)", fontSize: 16, fontWeight: 500 }}>Kyle Harrison</span>
+            <button className="hamburger" onClick={() => setSidebarOpen(!sidebarOpen)}>â˜°</button>
+            <span style={{ fontFamily: "var(--font-display)", fontSize: 16, fontWeight: 500 }}>Justin Culebro</span>
           </div>
           {renderPage()}
         </main>
@@ -1006,3 +1006,4 @@ export default function App() {
     </>
   );
 }
+
