@@ -1,56 +1,53 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ideasData from '../data/portfolio-ideas.json';
 
-// Pull interests directly from portfolio ideas so links always match
-const interests = ideasData.map((idea: any) => ({
-  title: idea.title,
-  href: `/portfolio/${idea.id}`,
-}));
+const interests = [
+  "Imagination",
+  "Better Living",
+  "Creative Technology",
+  "Art & Aesthetics",
+  "Writing",
+  "Data Art",
+  "Digital Gardens",
+  "Software Projects",
+  "Religious Art",
+  "AI & Creativity",
+  "Worldbuilding",
+  "Beautiful Tools",
+  "Internet Projects",
+  "Personal Transformation",
+  "Taste & Design",
+  "Spiritual Imagination",
+  "The Future of Creativity",
+];
 ---
 
-<BaseLayout title="About" currentPage="about" description="Justin Culebro is a General Partner at Contrary and founder of Contrary Research. Former investor at Index Ventures, Coatue, and TCV. Father of 4.">
-  <div class="about-banner">
-    <img src="/family.webp" alt="The Harrison family" loading="lazy" />
-  </div>
-
+<BaseLayout title="About" currentPage="about" description="Justin Culebro is a creative technologist building software, art, and imaginative tools for better living.">
   <h1 class="page-title">About</h1>
-  <p class="page-subtitle">Ideas · People · Companies</p>
+  <p class="page-subtitle">Imagination · Better Living · Art · Writing</p>
 
   <div class="info-grid">
     <span class="info-label">Role</span>
-    <span class="info-value">General Partner @ <a href="https://contrary.com/" target="_blank" rel="noreferrer">Contrary</a> · Founder @ <a href="https://research.contrary.com/" target="_blank" rel="noreferrer">Contrary Research</a></span>
-    <span class="info-label">Newsletter</span>
-    <span class="info-value">
-      <a href="https://investing101.substack.com/" target="_blank" rel="noreferrer">
-        Investing 101 on Substack ↗
-      </a>
-    </span>
+    <span class="info-value">Creative technologist building software, art, and imaginative tools for better living</span>
+    <span class="info-label">Projects</span>
+    <span class="info-value">Messiah AI</span>
     <span class="info-label">Location(s)</span>
-    <span class="info-value">San Francisco, CA / Portland, OR / Salt Lake City, UT / Albuquerque, NM</span>
+    <span class="info-value">Salt Lake City, UT / Syracuse, NY / Tuxtla Gutiérrez, Mexico / Denver, CO</span>
     <span class="info-label">Background</span>
-    <span class="info-value">Investing @ Contrary. Invested @ Index Ventures, Coatue, TCV. Built @ Sandbox Creations, Go Solar</span>
+    <span class="info-value">I build at the intersection of art, software, writing, and better living. My work explores how imagination can shape more beautiful tools, more meaningful creative projects, and more thoughtful ways to live.</span>
   </div>
 
   <div style="margin-top: 32px;">
     <h2 class="section-heading">Interests</h2>
     <div class="section-divider"></div>
     <div class="badge-row">
-      {interests.map((i) => <a href={i.href} class="badge badge-link">{i.title}</a>)}
+      {interests.map((i) => <span class="badge badge-interest">{i}</span>)}
     </div>
   </div>
 </BaseLayout>
 
 <style>
-  .badge-link {
-    text-decoration: none;
+  .badge-interest {
     color: var(--text-secondary);
-    transition: all 0.15s ease;
-    cursor: pointer;
-  }
-  .badge-link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-    background: var(--accent-soft);
   }
 </style>
