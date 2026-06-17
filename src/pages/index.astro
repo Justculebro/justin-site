@@ -6,25 +6,13 @@ import ideasData from '../data/portfolio-ideas.json';
 import { getCollection } from 'astro:content';
 
 const allEssays = await getCollection('essays');
-
-// Build essay lookup by slug
 const essayMap = new Map(allEssays.map(e => [e.slug, e]));
-
-// Resolve featured essays with full frontmatter
 const featuredEssays = featured.essays
   .filter(fe => essayMap.has(fe.slug))
   .map(fe => {
     const essay = essayMap.get(fe.slug)!;
-    return {
-      slug: fe.slug,
-      title: essay.data.title,
-      blurb: fe.blurb,
-      icon: fe.icon,
-      date: essay.data.date,
-    };
+    return { slug: fe.slug, title: essay.data.title, blurb: fe.blurb, icon: fe.icon, date: essay.data.date };
   });
-
-// Resolve featured portfolio ideas with full data
 const featuredIdeas = featured.portfolioIdeas
   .map(id => ideasData.find((i: any) => i.id === id))
   .filter(Boolean)
@@ -35,21 +23,13 @@ const featuredIdeas = featured.portfolioIdeas
     description: idea.description,
     essayCount: idea.essays?.length ?? 0,
   }));
-
-// Posts (tweets, links, etc.) — empty for now
 const featuredPosts = (featured.posts ?? []);
-
-// Serialize pools for client-side random selection
-const pools = {
-  essays: featuredEssays,
-  ideas: featuredIdeas,
-  posts: featuredPosts,
-};
+const pools = { essays: featuredEssays, ideas: featuredIdeas, posts: featuredPosts };
 ---
 
 <BaseLayout title="Home" currentPage="home" description="Justin Culebro — General Partner at Contrary, Founder of Contrary Research. Writing about venture capital, startups, and compounding human potential.">
   <h1 class="page-title">
-    Mapping the <em>architecture</em> of compounding human potential.
+    Mapping the <em>architecture</em> of compounding human potential!
   </h1>
   <p class="page-subtitle">
     General Partner @ <a href="https://contrary.com/" target="_blank" rel="noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 2px;">Contrary</a>. Founder @ <a href="https://research.contrary.com/" target="_blank" rel="noreferrer" style="color: var(--accent); text-decoration: underline; text-underline-offset: 2px;">Contrary Research</a>. Father of 4.
@@ -97,7 +77,6 @@ const pools = {
     <h2 class="section-heading">Featured</h2>
     <div class="section-divider"></div>
 
-    <!-- Essay spotlight — always shows, random pick on each load -->
     <div class="featured-section" id="section-essay" style="display:none;">
       <div class="featured-section-label">✎ Essay Spotlight</div>
       <a class="update-card" id="essay-card" href="#" style="text-decoration:none; color:inherit;">
@@ -113,7 +92,6 @@ const pools = {
       </a>
     </div>
 
-    <!-- Portfolio idea spotlight — always shows, random pick on each load -->
     <div class="featured-section" id="section-portfolio" style="display:none;">
       <div class="featured-section-label">◈ Portfolio Idea</div>
       <a class="featured-idea-card" id="portfolio-card" href="#">
@@ -127,7 +105,6 @@ const pools = {
       </a>
     </div>
 
-    <!-- Post/tweet spotlight — only shows if posts exist -->
     <div class="featured-section" id="section-post" style="display:none;">
       <div class="featured-section-label">💬 Post</div>
       <div class="featured-post-card" id="post-card">
@@ -147,175 +124,36 @@ const pools = {
 </BaseLayout>
 
 <style>
-  /* Site credit */
-  .site-credit {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    font-size: 11.5px;
-    color: var(--text-tertiary);
-    line-height: 1.5;
-  }
-  .site-credit a {
-    color: var(--text-tertiary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .site-credit a:hover {
-    color: var(--accent);
-  }
-
-  /* Focus list */
-  .focus-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .focus-list li {
-    position: relative;
-    padding-left: 16px;
-    font-size: 13.5px;
-    line-height: 1.5;
-    color: var(--text);
-  }
-  .focus-list li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-size: 12px;
-  }
-  .focus-list em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  /* Section labels */
-  .featured-section {
-    margin-bottom: 24px;
-  }
-  .featured-section-label {
-    font-size: 10.5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-tertiary);
-    margin-bottom: 10px;
-  }
-
-  /* Featured idea card */
-  .featured-idea-card {
-    display: block;
-    padding: 20px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  .featured-idea-card:hover {
-    box-shadow: var(--shadow-md);
-    border-color: var(--accent);
-  }
-  .featured-idea-title {
-    font-family: var(--font-display);
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
-    color: var(--text);
-  }
-  .featured-idea-tagline {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 13.5px;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
-  .featured-idea-desc {
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.55;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .featured-idea-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 14px;
-  }
-  .featured-idea-cta {
-    font-size: 12.5px;
-    font-weight: 500;
-    color: var(--accent);
-  }
-
-  /* Featured post card */
-  .featured-post-card {
-    padding: 20px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    transition: all 0.2s ease;
-  }
-  .featured-post-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 12px;
-  }
-  .featured-post-label {
-    font-size: 10.5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-tertiary);
-  }
-  .featured-post-date {
-    margin-left: auto;
-    font-size: 11.5px;
-    color: var(--text-tertiary);
-  }
-  .featured-post-text {
-    font-size: 14.5px;
-    line-height: 1.6;
-    color: var(--text);
-    margin-bottom: 12px;
-  }
-  .featured-post-link {
-    font-size: 12.5px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .featured-post-link:hover {
-    text-decoration: underline;
-  }
-
-  /* Fade-in */
-  .featured-section.active {
-    display: block !important;
-    animation: featuredFadeIn 0.35s ease;
-  }
-
-  @keyframes featuredFadeIn {
-    from { opacity: 0; transform: translateY(6px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  .site-credit { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 11.5px; color: var(--text-tertiary); line-height: 1.5; }
+  .site-credit a { color: var(--text-tertiary); text-decoration: underline; text-underline-offset: 2px; }
+  .site-credit a:hover { color: var(--accent); }
+  .focus-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .focus-list li { position: relative; padding-left: 16px; font-size: 13.5px; line-height: 1.5; color: var(--text); }
+  .focus-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 12px; }
+  .focus-list em { font-style: italic; color: var(--accent); }
+  .featured-section { margin-bottom: 24px; }
+  .featured-section-label { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 10px; }
+  .featured-idea-card { display: block; padding: 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); text-decoration: none; color: inherit; transition: all 0.2s ease; cursor: pointer; }
+  .featured-idea-card:hover { box-shadow: var(--shadow-md); border-color: var(--accent); }
+  .featured-idea-title { font-family: var(--font-display); font-size: 18px; font-weight: 500; margin-bottom: 4px; color: var(--text); }
+  .featured-idea-tagline { font-family: var(--font-display); font-style: italic; font-size: 13.5px; color: var(--accent); margin-bottom: 10px; }
+  .featured-idea-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .featured-idea-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; }
+  .featured-idea-cta { font-size: 12.5px; font-weight: 500; color: var(--accent); }
+  .featured-post-card { padding: 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); transition: all 0.2s ease; }
+  .featured-post-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .featured-post-label { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); }
+  .featured-post-date { margin-left: auto; font-size: 11.5px; color: var(--text-tertiary); }
+  .featured-post-text { font-size: 14.5px; line-height: 1.6; color: var(--text); margin-bottom: 12px; }
+  .featured-post-link { font-size: 12.5px; font-weight: 500; color: var(--accent); text-decoration: none; }
+  .featured-post-link:hover { text-decoration: underline; }
+  .featured-section.active { display: block !important; animation: featuredFadeIn 0.35s ease; }
+  @keyframes featuredFadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 
 <script define:vars={{ pools }}>
   document.addEventListener('DOMContentLoaded', () => {
     const { essays, ideas, posts } = pools;
-
-    // Essay spotlight — always show one random essay
     if (essays.length > 0) {
       const essay = essays[Math.floor(Math.random() * essays.length)];
       document.getElementById('essay-icon').textContent = essay.icon;
@@ -325,8 +163,6 @@ const pools = {
       document.getElementById('essay-card').href = '/essays/' + essay.slug;
       document.getElementById('section-essay').classList.add('active');
     }
-
-    // Portfolio idea spotlight — always show one random idea
     if (ideas.length > 0) {
       const idea = ideas[Math.floor(Math.random() * ideas.length)];
       document.getElementById('portfolio-title').textContent = idea.title;
@@ -336,8 +172,6 @@ const pools = {
       document.getElementById('portfolio-card').href = '/portfolio/' + idea.id;
       document.getElementById('section-portfolio').classList.add('active');
     }
-
-    // Post spotlight — only show if posts exist
     if (posts.length > 0) {
       const post = posts[Math.floor(Math.random() * posts.length)];
       document.getElementById('post-text').textContent = post.text || '';
@@ -355,12 +189,11 @@ const pools = {
 </script>
 
 <script is:inline>
-  // Auto-fit epigraph quotes to one line
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.epigraph p').forEach(p => {
       const container = p.closest('.epigraph-carousel');
       if (!container) return;
-      const maxWidth = container.clientWidth - 20; // account for border + padding
+      const maxWidth = container.clientWidth - 20;
       let size = 15;
       while (p.scrollWidth > maxWidth && size > 10) {
         size -= 0.5;
